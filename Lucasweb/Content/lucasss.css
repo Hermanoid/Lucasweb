@@ -32,11 +32,11 @@ font-family: Noto sans;
 }
 .mainheadbaritem{
 	display:inline-block;
-	margin: 0px;
+	margin: 0;
 	vertical-align:top;
 	color: #FFFFFF;
 	background-color: #000000;
-	border-width: 0px 0px 0px 0px;
+	border-width: 0 0 0 0;
 	font-weight: 100;
 	width:105px;
 }
@@ -45,10 +45,12 @@ font-family: Noto sans;
 }
 #mainContent{
 	padding:5px;
-	padding-top:0px;
+	padding-top:0;
 }
 .body{
-	margin: 0px;
+	margin: 0;
+    background-color:#333;
+
 }
 .email{
 	color: #2E2EFE;
