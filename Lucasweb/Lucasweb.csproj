@@ -127,6 +127,7 @@
     <Content Include="Content\bootstrap-3.3.6-dist\js\bootstrap.min.js" />
     <Content Include="Content\bootstrap-3.3.6-dist\js\npm.js" />
     <Content Include="Content\lucaslogo.ico" />
+    <Content Include="Content\lucaslogo.png" />
     <Content Include="Content\lucasss.css" />
     <Content Include="Global.asax" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
