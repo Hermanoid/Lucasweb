@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/bootstrap-3.3.6-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="~/Content/Site.css"/>
+</head>
+<body>
+    <div id="headbar" class="row">
+        <div class="Pstrip col-lg-2 col-xs-3 btn-primary btn">
+            <a href="~/" class="H0-75in">
+                <div class="row visible-xs-inline-block">
+                    <img class="H0-75in img-responsive" src="~/Content/lucaslogo.png" />
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-2 col-xs-3 btn-primary btn">
+            <a href="~/Soundweb">
+                <h3>
+                    Soundweb
+                </h3>
+            </a>
+        </div>
+        <div class="col-lg-2 col-xs-3 btn-primary btn">
+            <a href="~/Ancientweb">
+                <h3>
+                    Ancientweb
+                </h3>
+            </a>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <div id="footer">
+        <p>©2016 Lucasweb Productions, Herman, NE.  All rights reserved.  I think.</p>
+    </div>
+</body>
+</html>
