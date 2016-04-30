@@ -8,24 +8,24 @@
     <link rel="stylesheet" href="~/Content/Site.css"/>
 </head>
 <body>
-    <div id="headbar" class="row">
-        <div class="Pstrip col-lg-2 col-xs-3 btn-primary btn">
+    <div id="headbar" class="row Mstrip B-555">
+        <div class="Pstrip col-lg-1 col-xs-2">
             <a href="~/" class="H0-75in">
-                <div class="row visible-xs-inline-block">
-                    <img class="H0-75in img-responsive" src="~/Content/lucaslogo.png" />
+                <div class="row Mstrip">
+                    <img class="H0-75in" id="lucaslogo" src="~/Content/lucaslogo.png" />
                 </div>
             </a>
         </div>
-        <div class="col-lg-2 col-xs-3 btn-primary btn">
-            <a href="~/Soundweb">
-                <h3>
+        <div class="col-lg-2 col-xs-3 H0-75in B-555 HB-444">
+            <a  class ="BoringWhite" href="Soundweb">
+                <h3 class="BoringWhite">
                     Soundweb
                 </h3>
             </a>
         </div>
-        <div class="col-lg-2 col-xs-3 btn-primary btn">
-            <a href="~/Ancientweb">
-                <h3>
+        <div class="col-lg-2 col-xs-3 H0-75in B-555 HB-444">
+            <a class ="BoringWhite" href="Ancientweb">
+                <h3 class="BoringWhite">
                     Ancientweb
                 </h3>
             </a>
@@ -34,8 +34,11 @@
     <div>
         @RenderBody()
     </div>
-    <div id="footer">
-        <p>©2016 Lucasweb Productions, Herman, NE.  All rights reserved.  I think.</p>
+    <div class="B-555" id="footer">
+        <div id="footerText" class="text-center">
+            <p class="text-center" id="footerCopywrite">©2016 Lucasweb Productions, Herman, NE.  All rights reserved.  I think.</p>
+            <small class="text-center">The Lucasweb:  A combination of epic coding fails.</small>
+        </div>
     </div>
 </body>
 </html>
