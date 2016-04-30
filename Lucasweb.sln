@@ -3,7 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucasweb", "Lucasweb\Lucasweb.csproj", "{F5F7664B-081F-4A3C-A0E3-29A92EE005D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucasweb.WebApp", "Lucasweb\Lucasweb.WebApp.csproj", "{F5F7664B-081F-4A3C-A0E3-29A92EE005D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Client", "1.Client", "{3BFFFAFA-A499-4F58-AAF7-717488E28EAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Managers", "2.Managers", "{F57924E6-582C-4A4B-81AA-22BD5A4C6AFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucasweb.Managers", "Managers\Lucasweb.Managers.csproj", "{9D0EDBE0-92D3-4376-BEFE-3780D4D27065}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Engines", "3.Engines", "{7AFFCE2C-A88C-4511-B755-401263CCFF51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucasweb.Engines", "Lucasweb.Engines\Lucasweb.Engines.csproj", "{1F26ABCE-2AAF-4E93-8EB7-D153126181C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Accessors", "4.Accessors", "{6037FB2F-8AF3-46A4-B690-7C2F0D1AC969}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucasweb.DatabaseAccessors", "Lucasweb.DatabaseAccessors\Lucasweb.DatabaseAccessors.csproj", "{7DCC9F74-D314-46A6-A076-CA3C1C19FEBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Shared", "5.Shared", "{09462397-B56B-4626-A722-54D1BBFBC159}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucasweb.Contracts (Portable)", "Lucasweb.Contracts (portable)\Lucasweb.Contracts (Portable).csproj", "{754D7A13-6982-4FDC-BFCB-439E63A4166D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucasweb.DataContracts (Portable)", "Lucasweb.DataContracts (Portable)\Lucasweb.DataContracts (Portable).csproj", "{DD046A1A-FE25-4C68-873F-5F7068003C9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +35,36 @@ Global
 		{F5F7664B-081F-4A3C-A0E3-29A92EE005D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5F7664B-081F-4A3C-A0E3-29A92EE005D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5F7664B-081F-4A3C-A0E3-29A92EE005D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D0EDBE0-92D3-4376-BEFE-3780D4D27065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D0EDBE0-92D3-4376-BEFE-3780D4D27065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D0EDBE0-92D3-4376-BEFE-3780D4D27065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D0EDBE0-92D3-4376-BEFE-3780D4D27065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F26ABCE-2AAF-4E93-8EB7-D153126181C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F26ABCE-2AAF-4E93-8EB7-D153126181C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F26ABCE-2AAF-4E93-8EB7-D153126181C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F26ABCE-2AAF-4E93-8EB7-D153126181C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DCC9F74-D314-46A6-A076-CA3C1C19FEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DCC9F74-D314-46A6-A076-CA3C1C19FEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DCC9F74-D314-46A6-A076-CA3C1C19FEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DCC9F74-D314-46A6-A076-CA3C1C19FEBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{754D7A13-6982-4FDC-BFCB-439E63A4166D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{754D7A13-6982-4FDC-BFCB-439E63A4166D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{754D7A13-6982-4FDC-BFCB-439E63A4166D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{754D7A13-6982-4FDC-BFCB-439E63A4166D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD046A1A-FE25-4C68-873F-5F7068003C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD046A1A-FE25-4C68-873F-5F7068003C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD046A1A-FE25-4C68-873F-5F7068003C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD046A1A-FE25-4C68-873F-5F7068003C9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F5F7664B-081F-4A3C-A0E3-29A92EE005D4} = {3BFFFAFA-A499-4F58-AAF7-717488E28EAE}
+		{9D0EDBE0-92D3-4376-BEFE-3780D4D27065} = {F57924E6-582C-4A4B-81AA-22BD5A4C6AFA}
+		{1F26ABCE-2AAF-4E93-8EB7-D153126181C4} = {7AFFCE2C-A88C-4511-B755-401263CCFF51}
+		{7DCC9F74-D314-46A6-A076-CA3C1C19FEBB} = {6037FB2F-8AF3-46A4-B690-7C2F0D1AC969}
+		{754D7A13-6982-4FDC-BFCB-439E63A4166D} = {09462397-B56B-4626-A722-54D1BBFBC159}
+		{DD046A1A-FE25-4C68-873F-5F7068003C9E} = {09462397-B56B-4626-A722-54D1BBFBC159}
 	EndGlobalSection
 EndGlobal
