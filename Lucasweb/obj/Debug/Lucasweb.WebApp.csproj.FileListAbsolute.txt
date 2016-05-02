@@ -45,3 +45,7 @@ C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb\bin\System.Web.Mvc.xml
 C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb\obj\Debug\Lucasweb.WebApp.csprojResolveAssemblyReference.cache
 C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb\obj\Debug\Lucasweb.dll
 C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb\obj\Debug\Lucasweb.pdb
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb\bin\EntityFramework.dll
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb\bin\EntityFramework.SqlServer.dll
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb\bin\EntityFramework.xml
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb\bin\EntityFramework.SqlServer.xml
