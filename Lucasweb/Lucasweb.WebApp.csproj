@@ -130,6 +130,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Audio\Blue %28Da Ba Dee%29.mp3" />
     <Content Include="Content\bootstrap-3.3.6-dist\css\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-3.3.6-dist\css\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap-3.3.6-dist\css\bootstrap.css" />
@@ -153,6 +154,7 @@
     <Content Include="scripts\jquery.validate.min.js" />
     <Content Include="scripts\jquery.validate.unobtrusive.js" />
     <Content Include="scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="scripts\Soundweb.js" />
     <Content Include="Views\AncientWeb\contact.js" />
     <Content Include="Views\AncientWeb\masonry.pkgd.min.js" />
     <Content Include="Views\AncientWeb\SoundGet.js" />
@@ -165,7 +167,7 @@
     <Compile Include="Controllers\AncientWebController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PeopleController.cs" />
-    <Compile Include="Controllers\SoundsController.cs" />
+    <Compile Include="Controllers\SoundwebController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -204,12 +206,12 @@
     <Content Include="Views\People\Details.cshtml" />
     <Content Include="Views\People\Edit.cshtml" />
     <Content Include="Views\People\Index.cshtml" />
-    <Content Include="Views\Sounds\Create.cshtml" />
-    <Content Include="Views\Sounds\Delete.cshtml" />
-    <Content Include="Views\Sounds\Details.cshtml" />
-    <Content Include="Views\Sounds\Edit.cshtml" />
-    <Content Include="Views\Sounds\Index.cshtml" />
-    <Content Include="Views\Sounds\DynamicIndex.cshtml" />
+    <Content Include="Views\Soundweb\Create.cshtml" />
+    <Content Include="Views\Soundweb\Delete.cshtml" />
+    <Content Include="Views\Soundweb\Details.cshtml" />
+    <Content Include="Views\Soundweb\Edit.cshtml" />
+    <Content Include="Views\Soundweb\BoringIndex.cshtml" />
+    <Content Include="Views\Soundweb\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
