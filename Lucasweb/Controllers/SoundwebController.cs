@@ -10,22 +10,15 @@ using Lucasweb.Models;
 
 namespace Lucasweb.Controllers
 {
-    public class SoundsController : Controller
+    public class SoundwebController : Controller
     {
         private LucaswebContext db = new LucaswebContext();
 
-
-        //*****TEMP*****
-
-        public ActionResult DynamicIndex()
+        public ActionResult BoringIndex()
         {
             return View(db.Sound.ToList());
         }
 
-
-
-        //*****TEMP*****
-        
         // GET: Sounds
         public ActionResult Index()
         {
@@ -58,8 +51,9 @@ namespace Lucasweb.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "SoundID,Location,type")] Sound sound)
+        public ActionResult Create([Bind(Include = "SoundID,Location,type,Name,OwnerName,Notes")] Sound sound)
         {
+            sound.UploadTime = System.DateTime.Now;
             if (ModelState.IsValid)
             {
                 db.Sound.Add(sound);
@@ -90,7 +84,7 @@ namespace Lucasweb.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "SoundID,Location,type")] Sound sound)
+        public ActionResult Edit([Bind(Include = "SoundID,Location,type,Name,Notes")] Sound sound)
         {
             if (ModelState.IsValid)
             {
