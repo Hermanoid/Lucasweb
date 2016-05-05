@@ -212,6 +212,7 @@
     <Content Include="Views\Soundweb\Edit.cshtml" />
     <Content Include="Views\Soundweb\BoringIndex.cshtml" />
     <Content Include="Views\Soundweb\Index.cshtml" />
+    <Content Include="Views\Encrypter\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
