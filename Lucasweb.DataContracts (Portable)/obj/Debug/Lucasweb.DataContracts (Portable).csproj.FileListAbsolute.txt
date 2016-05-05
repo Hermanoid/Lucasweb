@@ -1,0 +1,32 @@
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\ApplicationInsights.config
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\roslyn\csc.exe
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\roslyn\vbc.exe
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\roslyn\VBCSCompiler.exe
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\Lucasweb.DataContracts (Portable).dll.config
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\Lucasweb.DataContracts (Portable).dll
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\Lucasweb.DataContracts (Portable).pdb
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\Microsoft.AI.Web.dll
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\Microsoft.AI.Web.xml
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\obj\Debug\Lucasweb.DataContracts (Portable).dll
+C:\Users\Goerge\Documents\GitHub\Lucasweb\Lucasweb.DataContracts (Portable)\obj\Debug\Lucasweb.DataContracts (Portable).pdb

@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucasweb.Contracts (Portabl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucasweb.DataContracts (Portable)", "Lucasweb.DataContracts (Portable)\Lucasweb.DataContracts (Portable).csproj", "{DD046A1A-FE25-4C68-873F-5F7068003C9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucasweb.Utils (Portable)", "Lucasweb.Utils (Portable)\Lucasweb.Utils (Portable).csproj", "{1095A561-A93B-4794-851C-6C20A4DEB332}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{DD046A1A-FE25-4C68-873F-5F7068003C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD046A1A-FE25-4C68-873F-5F7068003C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD046A1A-FE25-4C68-873F-5F7068003C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1095A561-A93B-4794-851C-6C20A4DEB332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1095A561-A93B-4794-851C-6C20A4DEB332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1095A561-A93B-4794-851C-6C20A4DEB332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1095A561-A93B-4794-851C-6C20A4DEB332}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,5 +72,6 @@ Global
 		{7DCC9F74-D314-46A6-A076-CA3C1C19FEBB} = {6037FB2F-8AF3-46A4-B690-7C2F0D1AC969}
 		{754D7A13-6982-4FDC-BFCB-439E63A4166D} = {09462397-B56B-4626-A722-54D1BBFBC159}
 		{DD046A1A-FE25-4C68-873F-5F7068003C9E} = {09462397-B56B-4626-A722-54D1BBFBC159}
+		{1095A561-A93B-4794-851C-6C20A4DEB332} = {09462397-B56B-4626-A722-54D1BBFBC159}
 	EndGlobalSection
 EndGlobal
