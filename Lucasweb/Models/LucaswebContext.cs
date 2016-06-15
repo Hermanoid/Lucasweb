@@ -22,5 +22,7 @@ namespace Lucasweb.Models
         public System.Data.Entity.DbSet<Lucasweb.Models.Person> People { get; set; }
 
         public System.Data.Entity.DbSet<Lucasweb.Models.Sound> Sound { get; set; }
+
+        public System.Data.Entity.DbSet<Lucasweb.Models.Pin> Pins { get; set; }
     }
 }

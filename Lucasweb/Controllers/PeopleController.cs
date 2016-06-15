@@ -41,8 +41,8 @@ namespace Lucasweb.Controllers
             return View();
         }
 
-        // POST: People/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        //POST: People/Create
+        //To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -50,8 +50,8 @@ namespace Lucasweb.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.People.Add(person);
-                db.SaveChanges();
+               //db.People.Add(person);
+               //db.SaveChanges();
                 return RedirectToAction("Index");
             }
 

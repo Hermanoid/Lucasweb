@@ -146,6 +146,8 @@
     <Content Include="Global.asax" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <None Include="Properties\PublishProfiles\GoDaddy Web.pubxml" />
+    <None Include="Properties\PublishProfiles\GoDaddy.pubxml" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
@@ -160,18 +162,43 @@
     <Content Include="Views\AncientWeb\SoundGet.js" />
     <Content Include="Views\AncientWeb\soundweb.js" />
     <Content Include="Views\AncientWeb\Upload.html" />
-    <Content Include="Web.config" />
+    <Content Include="CodeCraft\Week6\Content\bootstrap-theme.css" />
+    <Content Include="CodeCraft\Week6\Content\bootstrap-theme.min.css" />
+    <Content Include="CodeCraft\Week6\Content\bootstrap.css" />
+    <Content Include="CodeCraft\Week6\Content\bootstrap.min.css" />
+    <Content Include="CodeCraft\Week6\Content\Styles.css" />
+    <Content Include="CodeCraft\Week6\Diplomacy.html" />
+    <Content Include="CodeCraft\Week6\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="CodeCraft\Week6\Holdings.html" />
+    <Content Include="CodeCraft\Week6\index.html" />
+    <Content Include="CodeCraft\Week6\NewsandRumors.html" />
+    <Content Include="CodeCraft\Week6\Players.html" />
+    <Content Include="CodeCraft\Week6\Proclamation.html" />
+    <Content Include="CodeCraft\Week6\Scripts\bootstrap.js" />
+    <Content Include="CodeCraft\Week6\Scripts\bootstrap.min.js" />
+    <Content Include="CodeCraft\index.html" />
+    <None Include="CodeCraft\Week6\Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="CodeCraft\Week6\Scripts\jquery-1.9.1.js" />
+    <Content Include="CodeCraft\Week6\Scripts\jquery-1.9.1.min.js" />
+    <Content Include="CodeCraft\Week6\Trade.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AncientWebController.cs" />
+    <Compile Include="Controllers\CodecraftController.cs" />
+    <Compile Include="Controllers\EncrypterController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PeopleController.cs" />
+    <Compile Include="Controllers\PinsController.cs" />
     <Compile Include="Controllers\SoundwebController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Pin.cs" />
     <Compile Include="Models\Sound.cs" />
     <Compile Include="Models\LucaswebContext.cs" />
     <Compile Include="Models\Person.cs" />
@@ -213,6 +240,27 @@
     <Content Include="Views\Soundweb\BoringIndex.cshtml" />
     <Content Include="Views\Soundweb\Index.cshtml" />
     <Content Include="Views\Encrypter\Index.cshtml" />
+    <Content Include="Views\Encrypter\Pin.cshtml" />
+    <Content Include="Views\Encrypter\Result.cshtml" />
+    <Content Include="CodeCraft\Week6\packages.config" />
+    <Content Include="CodeCraft\Week6\Web.config" />
+    <Content Include="CodeCraft\Week6\Content\bootstrap-theme.css.map" />
+    <Content Include="CodeCraft\Week6\Content\bootstrap-theme.min.css.map" />
+    <Content Include="CodeCraft\Week6\Content\bootstrap.css.map" />
+    <Content Include="CodeCraft\Week6\Content\bootstrap.min.css.map" />
+    <Content Include="CodeCraft\Week6\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="CodeCraft\Week6\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="CodeCraft\Week6\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="CodeCraft\Week6\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="CodeCraft\Week6\Scripts\jquery-1.9.1.min.map" />
+    <None Include="CodeCraft\Week6\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Views\Pins\Create.cshtml" />
+    <Content Include="Views\Pins\Delete.cshtml" />
+    <Content Include="Views\Pins\Details.cshtml" />
+    <Content Include="Views\Pins\Edit.cshtml" />
+    <Content Include="Views\Pins\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -225,6 +273,24 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lucasweb.Contracts\Lucasweb.Contracts.csproj">
+      <Project>{b3833647-5752-42b8-b9a9-7ac4e838b9f4}</Project>
+      <Name>Lucasweb.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lucasweb.Engines\Lucasweb.Engines.csproj">
+      <Project>{1f26abce-2aaf-4e93-8eb7-d153126181c4}</Project>
+      <Name>Lucasweb.Engines</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lucasweb.Managers\Lucasweb.Managers.csproj">
+      <Project>{09250075-a965-4469-8648-d3818f03cf11}</Project>
+      <Name>Lucasweb.Managers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lucasweb.Utilities\Lucasweb.Utilities.csproj">
+      <Project>{f7c0b0b7-753e-45c4-b356-ece41f1e035e}</Project>
+      <Name>Lucasweb.Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
