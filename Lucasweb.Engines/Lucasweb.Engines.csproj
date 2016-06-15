@@ -113,7 +113,21 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EncryptEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lucasweb.Contracts\Lucasweb.Contracts.csproj">
+      <Project>{b3833647-5752-42b8-b9a9-7ac4e838b9f4}</Project>
+      <Name>Lucasweb.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lucasweb.DataContracts\Lucasweb.DataContracts.csproj">
+      <Project>{423ce42a-7e5e-44ad-9a9d-0949b91a6710}</Project>
+      <Name>Lucasweb.DataContracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
