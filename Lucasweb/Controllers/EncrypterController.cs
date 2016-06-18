@@ -28,26 +28,37 @@ namespace Lucasweb.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Pin([Bind(Include = "PinId,pin,message")] Pin pin)
+        public ActionResult Pin([Bind(Include = "PinID,isEncrypt,pin,message")] Pin UserPin)
         {
-            int UserPin = 0;
+            int UserPinNum;
             if (ModelState.IsValid)
             {
                 
-                if (!int.TryParse(pin.message,out UserPin))
+                if (!int.TryParse(UserPin.pin,out UserPinNum))
                 {
-                    TempData["ErrorMessage"] = string.Format("Entered Pin is not a number. ({0})", pin.pin);
+                    TempData["ErrorMessage"] = string.Format("Entered Pin is not a number. ({0})", UserPin.pin);
                     return RedirectToAction("Error");
                 }
-                TempData["Result"] = ClassFactory.CreateClass<IEncryptManager>().PinEncrypt(pin.message,UserPin);
-                return RedirectToAction("Index");
+
+                IEncryptManager IEM = ClassFactory.CreateClass<IEncryptManager>();
+                if (UserPin.isEncrypt)
+                {
+                    TempData["Result"] = IEM.PinEncrypt(UserPin.message, UserPinNum);
+                }else
+                {
+                    TempData["Result"] = IEM.PinDecrypt(UserPin.message, UserPinNum);
+                }
+                
+                TempData["BackLink"] = "Pin";
+                return RedirectToAction("Result");
             }
 
-            return View(pin);
+            return View(UserPin);
         }
         public ActionResult Result()
         {
             ViewData["Result"] = TempData["Result"];
+            ViewData["BackLink"] = TempData["BackLink"];
             return View();
         }
     }
