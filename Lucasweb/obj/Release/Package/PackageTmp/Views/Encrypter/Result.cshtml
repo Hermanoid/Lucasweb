@@ -6,10 +6,12 @@
 <h2>Result:</h2>
 
 <div class="col-md-offset-1 col-md-10">
-    <h4 class="form-control-feedback">@ViewData["Result"]</h4>
+    <h4>@ViewData["Result"]</h4>
 </div>
 <br/>
+<br/>
 <div>
-    @Html.ActionLink("Index","Index")
+    @Html.ActionLink("Back To Home","Index")|
+    @Html.ActionLink("Back To "+ViewData["BackLink"],ViewData["BackLink"].ToString())
 </div>
 

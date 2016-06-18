@@ -11,10 +11,12 @@ namespace Lucasweb.Models
     {
         public int PinId { get; set; }
 
-
+        [DataType(DataType.Password)]
         public string pin { get; set; }
 
         [DataType(DataType.MultilineText)]
         public string message { get; set; }
+
+        public bool isEncrypt { get; set; }
     }
 }
