@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Lucasweb.Models
 {
-    class StringModel
+    public class GenericModel
     {
         public int StringModelId { get; set; }
 
-        public string MString { get; set; }
+        public string message { get; set; }
+
+        public bool isEncrypt { get; set; }
     }
 }

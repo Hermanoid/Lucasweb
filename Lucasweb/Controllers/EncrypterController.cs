@@ -33,8 +33,8 @@ namespace Lucasweb.Controllers
             int UserPinNum;
             if (ModelState.IsValid)
             {
-                
-                if (!int.TryParse(UserPin.pin,out UserPinNum))
+
+                if (!int.TryParse(UserPin.pin, out UserPinNum))
                 {
                     TempData["ErrorMessage"] = string.Format("Entered Pin is not a number. ({0})", UserPin.pin);
                     return RedirectToAction("Error");
@@ -44,21 +44,57 @@ namespace Lucasweb.Controllers
                 if (UserPin.isEncrypt)
                 {
                     TempData["Result"] = IEM.PinEncrypt(UserPin.message, UserPinNum);
-                }else
+                }
+                else
                 {
                     TempData["Result"] = IEM.PinDecrypt(UserPin.message, UserPinNum);
                 }
-                
+
+                Dictionary<string, string> ExtraData = new Dictionary<string, string>();
+                ExtraData["Pin Used:  "] = UserPin.pin;
+                ExtraData["For Message:  "] = UserPin.message;
+                TempData["ExtraInfo"] = ExtraData;
+
                 TempData["BackLink"] = "Pin";
                 return RedirectToAction("Result");
             }
 
             return View(UserPin);
         }
+
+        public ActionResult Generic()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Generic(GenericModel SModel)
+        {
+            if (ModelState.IsValid)
+            {
+                IEncryptManager IEM = ClassFactory.CreateClass<IEncryptManager>();
+                if (SModel.isEncrypt)
+                {
+                    TempData["Result"] = IEM.GenericEncrypt(SModel.message);
+                }
+                else
+                {
+                    TempData["Result"] = IEM.GenericDecrypt(SModel.message);
+                }
+                TempData["ExtraInfo"] = new Dictionary<string, string>() { { "Original Message:  ", SModel.message } };
+                TempData["BackLink"] = "Generic";
+                return RedirectToAction("Result"); 
+            }
+
+            return View(SModel);
+        }
+
         public ActionResult Result()
         {
             ViewData["Result"] = TempData["Result"];
             ViewData["BackLink"] = TempData["BackLink"];
+            ViewData["ExtraInfo"] = TempData["ExtraInfo"];
             return View();
         }
     }

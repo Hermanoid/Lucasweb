@@ -15,6 +15,7 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Lucasweb.Managers
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Lucasweb.Managers.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Lucasweb.Managers.pdb
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Lucasweb.Contracts.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Lucasweb.Utilities.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Microsoft.AI.DependencyCollector.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -23,16 +24,15 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Microsoft.AI.Web.
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Microsoft.AI.WindowsServer.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Microsoft.ApplicationInsights.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\DontPanic.ServiceHelpers.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Lucasweb.Contracts.pdb
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Lucasweb.Utilities.pdb
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Microsoft.AI.DependencyCollector.xml
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Microsoft.AI.Web.xml
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Microsoft.ApplicationInsights.xml
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\obj\Debug\Lucasweb.Managers.csprojResolveAssemblyReference.cache
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\obj\Debug\Lucasweb.Managers.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\obj\Debug\Lucasweb.Managers.pdb
-C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\obj\Debug\Lucasweb.Managers.csprojResolveAssemblyReference.cache
-C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Lucasweb.Utilities.dll
-C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\DontPanic.ServiceHelpers.dll
-C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Lucasweb.Utilities.pdb

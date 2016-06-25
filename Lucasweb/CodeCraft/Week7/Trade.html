@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>A WORLD GONE MAD</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Content/bootstrap.css" />
+    <link rel="stylesheet" href="Content/bootstrap-theme.css" />
+    <link rel="stylesheet" href="Content/Styles.css" />
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+            var mapProp = {
+                center: new google.maps.LatLng(41.676010, -96.240678),
+                zoom: 13,
+                mapTypeId: google.maps.MapTypeId.SATELLITE
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            var tr1pnt1 = new google.maps.LatLng(41.669997, -96.270848);
+            var tr1pnt2 = new google.maps.LatLng(41.672896, -96.270817);
+            var tr1pnt3 = new google.maps.LatLng(41.675599, -96.261231);
+            var tr1pnt4 = new google.maps.LatLng(41.676137, -96.256273);
+            var tr1pnt5 = new google.maps.LatLng(41.675908, -96.217021);
+
+            var route = [tr1pnt1, tr1pnt2, tr1pnt3, tr1pnt4, tr1pnt5];
+            var routeLine = new google.maps.Polyline({
+                path: route,
+                strokeColor: "#00FF00",
+                strokeOpacity: 0.8,
+                strokeWeight: 2
+            });
+            routeLine.setMap(map);
+
+            var tr2pnt1 = new google.maps.LatLng(41.658934, -96.255229);
+            var tr2pnt2 = new google.maps.LatLng(41.658886, -96.255444);
+            var tr2pnt3 = new google.maps.LatLng(41.658845, -96.254854);
+            var tr2pnt4 = new google.maps.LatLng(41.658845, -96.254221);
+            var tr2pnt5 = new google.maps.LatLng(41.658379, -96.251631);
+            var tr2pnt6 = new google.maps.LatLng(41.667152, -96.251716);
+            var tr2pnt7 = new google.maps.LatLng(41.676075, -96.241247);
+            var tr2pnt8 = new google.maps.LatLng(41.676967, -96.239667);
+            var tr2pnt9 = new google.maps.LatLng(41.677592, -96.239339);
+            var tr2pnt10 = new google.maps.LatLng(41.679113, -96.236995);
+            var tr2pnt11 = new google.maps.LatLng(41.679591, -96.236907);
+            var tr2pnt12 = new google.maps.LatLng(41.682189, -96.239099);
+            var tr2pnt13 = new google.maps.LatLng(41.682208, -96.239871);
+
+            var route2 = [tr2pnt1, tr2pnt2, tr2pnt3, tr2pnt4, tr2pnt5, tr2pnt6, tr2pnt7, tr2pnt8, tr2pnt9, tr2pnt10, tr2pnt11, tr2pnt12, tr2pnt13];
+            var routeLine2 = new google.maps.Polyline({
+                path: route2,
+                strokeColor: "#00FF66",
+                strokeOpacity: 0.8,
+                strokeWeight: 2
+            });
+            routeLine2.setMap(map);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+
+    </script>
+    <!--<script>
+        function initialize() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 5,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>-->
+</head>
+<body>
+
+    <div id="header">A WORLD GONE MAD</div>
+
+    <div class="row">
+        <div id="TradeNav" class="col-md-2 col-xs-4 nav">
+            <a href="Players.html">Players</a><br />
+            <a href="Holdings.html">Holdings</a><br />
+            <a href="NewsandRumors.html">News and Rumors</a><br />
+            <a href="Diplomacy.html">Diplomacy</a><br />
+            <a href="Trade.html">Trade</a><br />
+            <a href="Proclamation.html">Proclamation</a><br />
+        </div>
+
+        <div id="section" class="col-md-10 col-xs-8 P-strip">
+            <h3>Trade</h3>
+            <p>Trade.  Trade is money.  More trade = More Money = More Power</p>
+            <h4 class="text-center">My Trade Agreements:</h4>
+            <div class="B-DDD">
+                <div class="row">
+                    <div class="text-center HB-CCC col-xs-12 col-md-6 col-lg-4">
+                        <h3 class="text-center text-primary">Trade Deal 1</h3>
+                        <p class="text-center">made with guy #1</p>
+                    </div>
+                    <div class="text-center HB-CCC col-xs-12 col-md-6 col-lg-4">
+                        <h3 class="text-center text-primary">Trade Deal 2</h3>
+                        <p class="text-center">made with guy #2</p>
+                    </div>
+                    <div class="text-center HB-CCC col-xs-12 col-md-6 col-lg-4">
+                        <h3 class="text-center text-primary">Trade Deal 3</h3>
+                        <p class="text-center">made with guy #3</p>
+                    </div>
+                    <div class="text-center HB-CCC col-xs-12 col-md-6 col-lg-4">
+                        <h3 class="text-center text-primary">Trade Deal 4</h3>
+                        <p class="text-center">made with guy #4</p>
+                    </div>
+                    <div class="text-center HB-CCC col-xs-12 col-md-6 col-lg-4">
+                        <h3 class="text-center text-primary">Trade Deal 5</h3>
+                        <p class="text-center">made with guy #5</p>
+                    </div>
+                    <div class="text-center HB-CCC col-xs-12 col-md-6 col-lg-4">
+                        <h3 class="text-center text-primary">Trade Deal 6</h3>
+                        <p class="text-center">made with guy #6</p>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div id="googleMap"></div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Copyright &copy; <a href="http://Lucasniewohner.com">Lucasniewohner.com</a></p>
+    </div>
+
+</body>
+</html>
