@@ -49,9 +49,7 @@
         <div id="setting-dropdown">
             <span onclick="settingPopup()" class="text-right glyphicon glyphicon-menu-down Font24px dropbtn" id="setting-icon"></span>
             <div id="settings-dropdown-stuff" class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                @{Html.RenderAction("_DropDownStuff", "Shared"); }
             </div>
         </div>
 

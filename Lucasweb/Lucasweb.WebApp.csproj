@@ -156,6 +156,7 @@
     <Content Include="CodeCraft\Week7\Scripts\Sample001Code.js" />
     <Content Include="CodeCraft\Week7\Scripts\Sample002Code.js" />
     <Content Include="CodeCraft\Week7\Trade.html" />
+    <Content Include="Content\Images\BlackBoxLogo.ico" />
     <Content Include="Content\js\setting-dropdown.js" />
     <Content Include="Content\NiceIcon.png" />
     <Content Include="Content\bootstrap-3.3.6-dist\css\bootstrap-theme.css" />
@@ -234,11 +235,13 @@
     <Compile Include="Controllers\AncientWebController.cs" />
     <Compile Include="Controllers\EncrypterController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SharedController.cs" />
     <Compile Include="Controllers\SoundwebController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Password.cs" />
     <Compile Include="Models\Pin.cs" />
     <Compile Include="Models\Sound.cs" />
     <Compile Include="Models\LucaswebContext.cs" />
@@ -294,6 +297,10 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="Views\Encrypter\Generic.cshtml" />
+    <Content Include="Views\Shared\_DropDownStuff.cshtml" />
+    <Content Include="Views\Encrypter\Password.cshtml" />
+    <Content Include="Views\Home\Projects.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
