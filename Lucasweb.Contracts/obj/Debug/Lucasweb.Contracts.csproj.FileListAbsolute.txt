@@ -31,3 +31,4 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\Microsoft.Applic
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\obj\Debug\Lucasweb.Contracts.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\obj\Debug\Lucasweb.Contracts.pdb
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\obj\Debug\Lucasweb.Contracts.csprojResolveAssemblyReference.cache

@@ -84,10 +84,49 @@ namespace Lucasweb.Controllers
                 }
                 TempData["ExtraInfo"] = new Dictionary<string, string>() { { "Original Message:  ", SModel.message } };
                 TempData["BackLink"] = "Generic";
-                return RedirectToAction("Result"); 
+                return RedirectToAction("Result");
             }
 
             return View(SModel);
+        }
+
+        public ActionResult Password()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Password(Password PassModel)
+        {
+            if (ModelState.IsValid)
+            {
+                IEncryptManager IEM = ClassFactory.CreateClass<IEncryptManager>();
+                if (PassModel.isEncrypt)
+                {
+                    TempData["Result"] = IEM.PasswordEncrypt(PassModel.message,PassModel.password);
+                }else
+                {
+                    TempData["Result"] = IEM.PasswordDecrypt(PassModel.message, PassModel.password);
+                }
+                Dictionary<string, string> ExtraInfo = new Dictionary<string, string>();
+                ExtraInfo["Password Used:  "] = PassModel.password;
+                ExtraInfo["Message:  "] = PassModel.message;
+                if (PassModel.isEncrypt)
+                {
+                    ExtraInfo["Mode:  "] = "Encrypt";
+                }
+                else
+                {
+                    ExtraInfo["Mode:  "] = "Decrypt";
+                }
+                TempData["ExtraInfo"] = ExtraInfo;
+                TempData["BackLink"] = "Password";
+                return RedirectToAction("Result");
+            }
+            return View();
+
+
         }
 
         public ActionResult Result()

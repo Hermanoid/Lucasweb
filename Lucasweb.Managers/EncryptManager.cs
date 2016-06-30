@@ -29,5 +29,15 @@ namespace Lucasweb.Managers
         {
             return ClassFactory.CreateClass<IEncryptEngine>().PinDecrypt(EncryptedMessage, Pin);
         }
+
+        public string PasswordEncrypt(string message, string password)
+        {
+            return ClassFactory.CreateClass<IEncryptEngine>().PinEncrypt(message, ClassFactory.CreateClass<ICharacterUtils>().addAsciiValsOf(password));
+        }
+
+        public string PasswordDecrypt(string message, string password)
+        {
+            return ClassFactory.CreateClass<IEncryptEngine>().PinDecrypt(message, ClassFactory.CreateClass<ICharacterUtils>().addAsciiValsOf(password));
+        }
     }
 }
