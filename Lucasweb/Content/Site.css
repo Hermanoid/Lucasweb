@@ -16,6 +16,12 @@
 .PB-5px{
     padding-bottom:5px;
 }
+.PB-10px{
+    padding-bottom:10px;
+}
+.PT-15px{
+    padding-top:15px;
+}
 .Mstrip{
     margin:0;
 }
@@ -45,6 +51,8 @@
 }
 .Font24px{
     font-size:24px;
+    height:28px;
+    width:28px;
 }
 .Font40px{
     font-size:40px;
@@ -81,6 +89,8 @@
 .jumboformat{
     padding:5px;
     border-radius:15px;
+    border-top-right-radius:0;
+    border-top-left-radius:0;
 }
 .B-BBB{
     background-color:#BBB;
@@ -100,6 +110,9 @@
 }
 .C-FFF{
     color:#FFF;
+}
+.H-85px{
+    height:85px;
 }
 #headbar{
     height:0.75in;

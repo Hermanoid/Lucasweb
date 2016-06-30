@@ -13,5 +13,15 @@ namespace Lucasweb.Controllers
         {
             return View();
         }
+
+        public ActionResult Projects()
+        {
+            return View();
+        }
+
+        public ActionResult About()
+        {
+            return View();
+        }
     }
 }
