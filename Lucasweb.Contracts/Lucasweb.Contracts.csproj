@@ -113,6 +113,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ICharacterUtils.cs" />
     <Compile Include="IEncryptEngine.cs" />
     <Compile Include="IEncryptManager.cs" />
     <Compile Include="IHelloManager.cs" />
