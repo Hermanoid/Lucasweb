@@ -131,6 +131,34 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Audio\Blue %28Da Ba Dee%29.mp3" />
+    <Content Include="CodeCraft\Week7\Content\bootstrap-theme.css" />
+    <Content Include="CodeCraft\Week7\Content\bootstrap-theme.min.css" />
+    <Content Include="CodeCraft\Week7\Content\bootstrap.css" />
+    <Content Include="CodeCraft\Week7\Content\bootstrap.min.css" />
+    <Content Include="CodeCraft\Week7\Content\Styles.css" />
+    <Content Include="CodeCraft\Week7\Diplomacy.html" />
+    <Content Include="CodeCraft\Week7\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="CodeCraft\Week7\Holdings.html" />
+    <Content Include="CodeCraft\Week7\images\20140409_011317262_iOS.JPG" />
+    <Content Include="CodeCraft\Week7\images\20160512_144236421_iOS.JPG" />
+    <Content Include="CodeCraft\Week7\index.html" />
+    <Content Include="CodeCraft\Week7\NewsandRumors.html" />
+    <Content Include="CodeCraft\Week7\Players.html" />
+    <Content Include="CodeCraft\Week7\Proclamation.html" />
+    <Content Include="CodeCraft\Week7\Sample001.html" />
+    <Content Include="CodeCraft\Week7\Sample002.html" />
+    <Content Include="CodeCraft\Week7\Scripts\bootstrap.js" />
+    <Content Include="CodeCraft\Week7\Scripts\bootstrap.min.js" />
+    <Content Include="CodeCraft\Week7\packages.config" />
+    <None Include="CodeCraft\Week7\Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="CodeCraft\Week7\Scripts\jquery-1.9.1.js" />
+    <Content Include="CodeCraft\Week7\Scripts\jquery-1.9.1.min.js" />
+    <Content Include="CodeCraft\Week7\Scripts\Sample001Code.js" />
+    <Content Include="CodeCraft\Week7\Scripts\Sample002Code.js" />
+    <Content Include="CodeCraft\Week7\Trade.html" />
+    <Content Include="Content\Images\BlackBoxLogo.ico" />
+    <Content Include="Content\js\setting-dropdown.js" />
+    <Content Include="Content\NiceIcon.png" />
     <Content Include="Content\bootstrap-3.3.6-dist\css\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-3.3.6-dist\css\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap-3.3.6-dist\css\bootstrap.css" />
@@ -139,15 +167,32 @@
     <Content Include="Content\bootstrap-3.3.6-dist\js\bootstrap.js" />
     <Content Include="Content\bootstrap-3.3.6-dist\js\bootstrap.min.js" />
     <Content Include="Content\bootstrap-3.3.6-dist\js\npm.js" />
+    <Content Include="Content\ProfileImage.ico" />
     <Content Include="Content\lucaslogo.ico" />
     <Content Include="Content\lucaslogo.png" />
     <Content Include="Content\lucasss.css" />
+    <Content Include="Content\ProfileImage.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="Content\HorizontalOverflowFix.less" />
+    <Content Include="CodeCraft\Week7\Web.config" />
+    <Content Include="CodeCraft\Week7\Content\bootstrap-theme.css.map" />
+    <Content Include="CodeCraft\Week7\Content\bootstrap-theme.min.css.map" />
+    <Content Include="CodeCraft\Week7\Content\bootstrap.css.map" />
+    <Content Include="CodeCraft\Week7\Content\bootstrap.min.css.map" />
+    <Content Include="CodeCraft\Week7\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="CodeCraft\Week7\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="CodeCraft\Week7\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="CodeCraft\Week7\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="CodeCraft\Week7\Scripts\jquery-1.9.1.min.map" />
+    <None Include="CodeCraft\Week7\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
     <None Include="Properties\PublishProfiles\GoDaddy Web.pubxml" />
     <None Include="Properties\PublishProfiles\GoDaddy.pubxml" />
+    <None Include="Properties\PublishProfiles\lucasweb-webapp.pubxml" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
@@ -188,20 +233,20 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AncientWebController.cs" />
-    <Compile Include="Controllers\CodecraftController.cs" />
     <Compile Include="Controllers\EncrypterController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\PeopleController.cs" />
-    <Compile Include="Controllers\PinsController.cs" />
+    <Compile Include="Controllers\SharedController.cs" />
     <Compile Include="Controllers\SoundwebController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Password.cs" />
     <Compile Include="Models\Pin.cs" />
     <Compile Include="Models\Sound.cs" />
     <Compile Include="Models\LucaswebContext.cs" />
     <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\GenericModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -228,11 +273,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\People\Create.cshtml" />
-    <Content Include="Views\People\Delete.cshtml" />
-    <Content Include="Views\People\Details.cshtml" />
-    <Content Include="Views\People\Edit.cshtml" />
-    <Content Include="Views\People\Index.cshtml" />
     <Content Include="Views\Soundweb\Create.cshtml" />
     <Content Include="Views\Soundweb\Delete.cshtml" />
     <Content Include="Views\Soundweb\Details.cshtml" />
@@ -256,11 +296,11 @@
     <None Include="CodeCraft\Week6\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="Views\Pins\Create.cshtml" />
-    <Content Include="Views\Pins\Delete.cshtml" />
-    <Content Include="Views\Pins\Details.cshtml" />
-    <Content Include="Views\Pins\Edit.cshtml" />
-    <Content Include="Views\Pins\Index.cshtml" />
+    <Content Include="Views\Encrypter\Generic.cshtml" />
+    <Content Include="Views\Shared\_DropDownStuff.cshtml" />
+    <Content Include="Views\Encrypter\Password.cshtml" />
+    <Content Include="Views\Home\Projects.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

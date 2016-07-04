@@ -15,5 +15,7 @@ namespace Lucasweb.Contracts
         string PinEncrypt(string Message, int Pin);
 
         string PinDecrypt(string EncryptedMessage, int Pin);
+        string PasswordEncrypt(string message, string password);
+        string PasswordDecrypt( string message, string password);
     }
 }

@@ -49,6 +49,8 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Lucasweb.Engines.d
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Lucasweb.Engines.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Lucasweb.Engines.pdb
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\DontPanic.ServiceHelpers.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Lucasweb.Contracts.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Lucasweb.DataContracts.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.AI.DependencyCollector.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -57,6 +59,8 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.AI.Web.d
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.AI.WindowsServer.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.ApplicationInsights.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Lucasweb.Contracts.pdb
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Lucasweb.DataContracts.pdb
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.AI.DependencyCollector.xml
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.AI.Web.xml
@@ -66,7 +70,3 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.CodeDom.
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\obj\Debug\Lucasweb.Engines.csprojResolveAssemblyReference.cache
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\obj\Debug\Lucasweb.Engines.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\obj\Debug\Lucasweb.Engines.pdb
-C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Lucasweb.Contracts.dll
-C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Lucasweb.DataContracts.dll
-C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Lucasweb.Contracts.pdb
-C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Lucasweb.DataContracts.pdb

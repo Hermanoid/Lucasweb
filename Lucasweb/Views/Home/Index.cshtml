@@ -2,13 +2,23 @@
     ViewBag.title = "Lucasweb - Home";
 }
 
+<style>
+    .row {
+        margin-right: 0;
+    }
+
+    .container {
+        margin-right: 0;
+        margin-left: 0;
+    }
+</style>
 
 
 <div>
     <div class="jumbotron PL10 Mstrip">
         <h1 class="text-center">The Lucasweb</h1>
         <h3 class="text-center">Welcome the the Lucasweb!</h3>
-        <p class="text-center">The LucasWeb is a combination of the website-works of <br />Lucas Niewohner</p>
+        <p class="text-center">The Lucasweb is a combination of the website-works of <br />Lucas Niewohner</p>
     </div>
     <div class="text-center B-DDD row">
         <h3 class="text-center Mstrip">In the works:</h3>
@@ -19,7 +29,7 @@
         </div>
         <div class="HB-CCC col-md-2">
             <span class="glyphicon glyphicon-globe Font24px" aria-hidden="true"></span>
-            <p><a class="text-center" href="~/Views/Codecraft/index.cshtml">CodeCraft_Masters</a></p>
+            <p><a class="text-center" href="~/CodeCraft/index.html">CodeCraft_Masters</a></p>
         </div>
     </div>
     <div>
@@ -27,74 +37,75 @@
         <br />
         <div class="row">
 
-            <a href="Home">
-                <div class="col-lg-1 col-md-2 col-sm-3  col-xs-4 text-center HB-CCC">
-                    <span class="glyphicon glyphicon-home Font24px"></span>
-                    <p>Home</p>
-                </div>
-            </a>
-            <a href="AncientWeb">
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 text-center HB-CCC">
-                    <span class="glyphicon glyphicon-time Font24px"></span>
-                    <p>AncientWeb</p>
-                </div>
-            </a>
+            <div class="container">
+                <a href="Home">
+                    <div class="col-lg-1 col-md-2 col-sm-3  col-xs-4 text-center HB-CCC">
+                        <span class="glyphicon glyphicon-home Font24px"></span>
+                        <p>Home</p>
+                    </div>
+                </a>
+                <a href="AncientWeb">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 text-center HB-CCC">
+                        <img class="Font24px" src="~/Content/lucaslogo.png"/>
+                        <p>AncientWeb</p>
+                    </div>
+                </a>
 
-            <a href="Soundweb">
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 text-center HB-CCC">
-                    <span class="glyphicon glyphicon-headphones Font24px"></span>
-                    <p>Soundweb</p>
-                </div>
-            </a>
-            <a href="">
-                <div class="col-lg-1 col-xs-4 text-center">
-                    <span class="glyphicon"></span>
-                </div>
-            </a>
-            <a href="">
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4">
-                    <span class="glyphicon"></span>
-                </div>
-            </a>
-            <a href="">
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4">
-                    <span class="glyphicon"></span>
-                </div>
-            </a>
-            <a href="">
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4">
-                    <span class="glyphicon"></span>
-                </div>
-            </a>
-            <a href="">
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4">
-                    <span class="glyphicon"></span>
-                </div>
-            </a>
-            <a href="">
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4">
-                    <span class="glyphicon"></span>
-                </div>
-            </a>
-            <a href="">
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4">
-                    <span class="glyphicon"></span>
-                </div>
-            </a>
-            <a href="">
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4">
-                    <span class="glyphicon"></span>
-                </div>
-            </a>
-            <a href="">
-                <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4">
-                    <span class="glyphicon"></span>
-                </div>
-            </a>
-
+                <a href="Soundweb">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 text-center HB-CCC">
+                        <span class="glyphicon glyphicon-headphones Font24px"></span>
+                        <p>Soundweb</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="col-lg-1 col-xs-4 text-center">
+                        <span class="glyphicon"></span>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4">
+                        <span class="glyphicon"></span>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4">
+                        <span class="glyphicon"></span>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4">
+                        <span class="glyphicon"></span>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4">
+                        <span class="glyphicon"></span>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4">
+                        <span class="glyphicon"></span>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4">
+                        <span class="glyphicon"></span>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4">
+                        <span class="glyphicon"></span>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4">
+                        <span class="glyphicon"></span>
+                    </div>
+                </a>
+            </div>
         </div>
         <br />
-        <p class="text-center">See the <a href="projects">Complete Subproject Page</a> For more </p>
+        <p class="text-center">See the <a href="Home/Projects">Complete Subproject Page</a> For more </p>
     </div>
     <div class="row B-EEE">
         <h3 class="text-center">About the Author</h3>

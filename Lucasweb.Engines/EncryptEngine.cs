@@ -78,9 +78,9 @@ namespace Lucasweb.Engines
                 noProb = false;
                 while (!noProb)
                 {
-                    if (newPos > chars.Count)
+                    if (newPos >= chars.Count)
                     {
-                        newPos -= chars.Count;
+                        newPos -= chars.Count-1;
                     }else
                     {
                         noProb = true;
@@ -113,9 +113,9 @@ namespace Lucasweb.Engines
                 noProb = false;
                 while (!noProb)
                 {
-                    if (newPos > chars.Count)
+                    if (newPos <= 0)
                     {
-                        newPos += chars.Count;
+                        newPos += chars.Count-1;
                     }
                     else
                     {

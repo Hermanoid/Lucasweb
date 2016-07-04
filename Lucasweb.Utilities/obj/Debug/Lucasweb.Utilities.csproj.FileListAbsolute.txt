@@ -25,6 +25,7 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Microsoft.AI.Web
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Microsoft.AI.WindowsServer.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Microsoft.ApplicationInsights.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Lucasweb.Contracts.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Lucasweb.DatabaseAccessors.pdb
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Lucasweb.Engines.pdb
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Microsoft.AI.DependencyCollector.xml
@@ -33,8 +34,7 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Microsoft.AI.Web
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Microsoft.ApplicationInsights.xml
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Lucasweb.Contracts.pdb
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\obj\Debug\Lucasweb.Utilities.csprojResolveAssemblyReference.cache
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\obj\Debug\Lucasweb.Utilities.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\obj\Debug\Lucasweb.Utilities.pdb
-C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Lucasweb.Contracts.dll
-C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Lucasweb.Contracts.pdb

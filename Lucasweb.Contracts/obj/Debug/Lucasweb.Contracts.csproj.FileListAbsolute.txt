@@ -14,6 +14,7 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\roslyn\VBCSCompi
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\Lucasweb.Contracts.dll.config
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\Lucasweb.Contracts.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\Lucasweb.Contracts.pdb
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\DontPanic.ServiceHelpers.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\Microsoft.AI.DependencyCollector.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -22,13 +23,12 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\Microsoft.AI.Web
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\Microsoft.AI.WindowsServer.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\Microsoft.ApplicationInsights.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\DontPanic.ServiceHelpers.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\Microsoft.AI.DependencyCollector.xml
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\Microsoft.AI.Web.xml
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\Microsoft.ApplicationInsights.xml
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\obj\Debug\Lucasweb.Contracts.csprojResolveAssemblyReference.cache
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\obj\Debug\Lucasweb.Contracts.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\obj\Debug\Lucasweb.Contracts.pdb
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Contracts\obj\Debug\Lucasweb.Contracts.csprojResolveAssemblyReference.cache

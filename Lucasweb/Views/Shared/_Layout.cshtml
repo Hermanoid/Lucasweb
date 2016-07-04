@@ -3,34 +3,56 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+    @Html.Raw("<title>" + ViewBag.Title + " - Lucasweb </title>")
     <link rel="stylesheet" href="~/Content/bootstrap-3.3.6-dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="~/Content/Site.css"/>
+    @*<link rel="stylesheet/less" type="text/css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js" type="text/javascript"></script>*@
+    <link rel="icon" href="~/Content/NiceIcon.png"/>
     <script src="~/scripts/jquery-1.10.2.min.js"></script>
+    <script>
+        function settingPopup() {
+            document.getElementById("settings-dropdown-stuff").classList.toggle("show");
+            popupMargin();
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+        function popupMargin() {
+            var sds = $("#settings-dropdown-stuff");
+            sds.css("margin-left",window.innerWidth-sds.width()-15);
+        }
+        window.onresize = popupMargin;
+    </script>
 </head>
 <body>
     <div id="headbar" class="row Mstrip B-555">
         <div class="Pstrip col-lg-1 col-xs-2">
             <a href="~/" class="H0-75in">
                 <div class="row Mstrip">
-                    <img class="H0-75in" id="lucaslogo" src="~/Content/lucaslogo.png" />
+                    <img class="H0-75in" id="lucaslogo" src="~/Content/ProfileImage.png" />
                 </div>
             </a>
         </div>
-        <div class="col-lg-2 col-xs-3 H0-75in B-555 HB-444">
-            <a  class ="BoringWhite" href="Soundweb">
-                <h3 class="BoringWhite">
-                    Soundweb
-                </h3>
-            </a>
+        <div id="setting-dropdown">
+            <span onclick="settingPopup()" class="text-right glyphicon glyphicon-menu-down Font24px dropbtn" id="setting-icon"></span>
+            <div id="settings-dropdown-stuff" class="dropdown-content">
+                @{Html.RenderAction("_DropDownStuff", "Shared"); }
+            </div>
         </div>
-        <div class="col-lg-2 col-xs-3 H0-75in B-555 HB-444">
-            <a class ="BoringWhite" href="Ancientweb">
-                <h3 class="BoringWhite">
-                    Ancientweb
-                </h3>
-            </a>
-        </div>
+
     </div>
     <div>
         @RenderBody()
