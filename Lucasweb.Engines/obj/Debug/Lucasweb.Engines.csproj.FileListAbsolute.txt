@@ -70,3 +70,7 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.CodeDom.
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\obj\Debug\Lucasweb.Engines.csprojResolveAssemblyReference.cache
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\obj\Debug\Lucasweb.Engines.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\obj\Debug\Lucasweb.Engines.pdb
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.AspNet.Identity.Core.xml

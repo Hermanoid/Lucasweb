@@ -31,3 +31,11 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DataContracts\bin\Microsoft.Co
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DataContracts\obj\Debug\Lucasweb.DataContracts.csprojResolveAssemblyReference.cache
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DataContracts\obj\Debug\Lucasweb.DataContracts.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DataContracts\obj\Debug\Lucasweb.DataContracts.pdb
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DataContracts\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DataContracts\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DataContracts\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DataContracts\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DataContracts\bin\Microsoft.Owin.Security.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DataContracts\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DataContracts\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DataContracts\bin\Microsoft.AspNet.Identity.Owin.xml
