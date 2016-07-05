@@ -284,8 +284,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityContext.cs" />
+    <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\Password.cs" />
     <Compile Include="Models\Pin.cs" />
+    <Compile Include="Models\RegisterModel.cs" />
     <Compile Include="Models\Sound.cs" />
     <Compile Include="Models\LucaswebContext.cs" />
     <Compile Include="Models\Person.cs" />
@@ -345,6 +347,8 @@
     <Content Include="Views\Home\Projects.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Account\Index.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
