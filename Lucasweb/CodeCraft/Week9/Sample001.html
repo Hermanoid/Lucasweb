@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        while (true) {
+            document.getElementById('DateBox').innerHTML = Date()
+        }
+    </script>
+    <!--<script>
+        function testFunc() {
+            document.getElementById("testFuncDemo").innerHTML = "ROBBER!!!";
+            setTimeout(document.getElementById("testFuncDemo").innerHTML = "nothing to see here", 5000);
+        }
+    </script>-->
+    <script src="Scripts/Sample001Code.js"></script>
+</head>
+<body>
+    <h1>
+        My First Javascript
+    </h1>
+    <p>JavaScript can change HTML attributes.</p>
+
+    <p>In this case JavaScript changes the src (source) attribute of an image.</p>
+
+    <button onclick="document.getElementById('myImage').src = 'images/20140409_011317262_iOS.JPG'">BOY</button>
+
+    <img id="myImage" src="C:\Users\lucas\OneDrive\Pictures\Camera Roll\20160512_144236421_iOS.jpg" style="width:100px; height:auto">
+
+    <button onclick="document.getElementById('myImage').src = 'images/20160512_144236421_iOS.JPG'">GIRL</button>
+
+    <hr />
+
+    <h1 id="demoHide">AAHHH!!! don't look at me!</h1>
+    <button onclick="document.getElementById('demoHide').style.display='none';">Look Away</button>
+
+    <hr />
+
+    <h1 id="demoShow" style="display:none;">Hiii...   how ya doin..</h1>
+    <button onclick="document.getElementById('demoShow').style.display='block';">Look Towards</button>
+
+    <hr />
+
+    <h1 id="demoScript">I'm a robber. you can't see me</h1>
+    <script>
+        document.getElementById("demoScript").innerHTML = "My First JavaScript";
+    </script>
+
+    <hr />
+    <h1 id="testFuncDemo">Nothing to see here.</h1>
+    <button onclick="testFunc()">
+        AGAIN!!
+    </button>
+
+    <hr/>
+    
+    <p id="RandomBox">Strings Home</p>
+    <button onclick="whatDaWord(15)">Get Random Characters</button>
+
+    <hr/>
+
+
+</body>
+</html>

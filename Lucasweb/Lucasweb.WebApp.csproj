@@ -171,32 +171,44 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Audio\Blue %28Da Ba Dee%29.mp3" />
-    <Content Include="CodeCraft\Week7\Content\bootstrap-theme.css" />
-    <Content Include="CodeCraft\Week7\Content\bootstrap-theme.min.css" />
-    <Content Include="CodeCraft\Week7\Content\bootstrap.css" />
-    <Content Include="CodeCraft\Week7\Content\bootstrap.min.css" />
-    <Content Include="CodeCraft\Week7\Content\Styles.css" />
-    <Content Include="CodeCraft\Week7\Diplomacy.html" />
     <Content Include="CodeCraft\Week7\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="CodeCraft\Week7\Holdings.html" />
     <Content Include="CodeCraft\Week7\images\20140409_011317262_iOS.JPG" />
     <Content Include="CodeCraft\Week7\images\20160512_144236421_iOS.JPG" />
-    <Content Include="CodeCraft\Week7\index.html" />
-    <Content Include="CodeCraft\Week7\NewsandRumors.html" />
-    <Content Include="CodeCraft\Week7\Players.html" />
-    <Content Include="CodeCraft\Week7\Proclamation.html" />
-    <Content Include="CodeCraft\Week7\Sample001.html" />
-    <Content Include="CodeCraft\Week7\Sample002.html" />
     <Content Include="CodeCraft\Week7\Scripts\bootstrap.js" />
     <Content Include="CodeCraft\Week7\Scripts\bootstrap.min.js" />
-    <Content Include="CodeCraft\Week7\packages.config" />
     <None Include="CodeCraft\Week7\Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="CodeCraft\Week7\Scripts\jquery-1.9.1.js" />
     <Content Include="CodeCraft\Week7\Scripts\jquery-1.9.1.min.js" />
     <Content Include="CodeCraft\Week7\Scripts\Sample001Code.js" />
     <Content Include="CodeCraft\Week7\Scripts\Sample002Code.js" />
-    <Content Include="CodeCraft\Week7\Trade.html" />
+    <Content Include="CodeCraft\Week9\Content\bootstrap-theme.css" />
+    <Content Include="CodeCraft\Week9\Content\bootstrap-theme.min.css" />
+    <Content Include="CodeCraft\Week9\Content\bootstrap.css" />
+    <Content Include="CodeCraft\Week9\Content\bootstrap.min.css" />
+    <Content Include="CodeCraft\Week9\Content\Styles.css" />
+    <Content Include="CodeCraft\Week9\Diplomacy.html" />
+    <Content Include="CodeCraft\Week9\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="CodeCraft\Week9\Holdings.html" />
+    <Content Include="CodeCraft\Week9\images\20140409_011317262_iOS.JPG" />
+    <Content Include="CodeCraft\Week9\images\20160512_144236421_iOS.JPG" />
+    <Content Include="CodeCraft\Week9\index.html" />
+    <Content Include="CodeCraft\Week9\NewsandRumors.html" />
+    <Content Include="CodeCraft\Week9\Players.html" />
+    <Content Include="CodeCraft\Week9\Proclamation.html" />
+    <Content Include="CodeCraft\Week9\Sample001.html" />
+    <Content Include="CodeCraft\Week9\Sample002.html" />
+    <Content Include="CodeCraft\Week9\Sample003.html" />
+    <Content Include="CodeCraft\Week9\Scripts\bootstrap.js" />
+    <Content Include="CodeCraft\Week9\Scripts\bootstrap.min.js" />
+    <None Include="CodeCraft\Week9\Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="CodeCraft\Week9\Scripts\jquery-1.9.1.js" />
+    <Content Include="CodeCraft\Week9\Scripts\jquery-1.9.1.min.js" />
+    <Content Include="CodeCraft\Week9\Scripts\Sample001Code.js" />
+    <Content Include="CodeCraft\Week9\Scripts\Sample002Code.js" />
+    <Content Include="CodeCraft\Week9\Scripts\Sample003Code.js" />
+    <Content Include="CodeCraft\Week9\Trade.html" />
     <Content Include="Content\Images\BlackBoxLogo.ico" />
+    <Content Include="Content\Images\BlankProfileImage.bmp" />
     <Content Include="Content\js\setting-dropdown.js" />
     <Content Include="Content\NiceIcon.png" />
     <Content Include="Content\bootstrap-3.3.6-dist\css\bootstrap-theme.css" />
@@ -218,16 +230,26 @@
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Content\HorizontalOverflowFix.less" />
     <Content Include="CodeCraft\Week7\Web.config" />
-    <Content Include="CodeCraft\Week7\Content\bootstrap-theme.css.map" />
-    <Content Include="CodeCraft\Week7\Content\bootstrap-theme.min.css.map" />
-    <Content Include="CodeCraft\Week7\Content\bootstrap.css.map" />
-    <Content Include="CodeCraft\Week7\Content\bootstrap.min.css.map" />
     <Content Include="CodeCraft\Week7\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="CodeCraft\Week7\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="CodeCraft\Week7\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="CodeCraft\Week7\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="CodeCraft\Week7\Scripts\jquery-1.9.1.min.map" />
     <None Include="CodeCraft\Week7\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="CodeCraft\Week9\packages.config" />
+    <Content Include="CodeCraft\Week9\Web.config" />
+    <Content Include="CodeCraft\Week9\Content\bootstrap-theme.css.map" />
+    <Content Include="CodeCraft\Week9\Content\bootstrap-theme.min.css.map" />
+    <Content Include="CodeCraft\Week9\Content\bootstrap.css.map" />
+    <Content Include="CodeCraft\Week9\Content\bootstrap.min.css.map" />
+    <Content Include="CodeCraft\Week9\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="CodeCraft\Week9\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="CodeCraft\Week9\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="CodeCraft\Week9\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="CodeCraft\Week9\Scripts\jquery-1.9.1.min.map" />
+    <None Include="CodeCraft\Week9\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Properties\PublishProfiles\GoDaddy Web.pubxml" />
@@ -283,13 +305,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606181333257_InitialCreate.cs" />
+    <Compile Include="Migrations\201606181333257_InitialCreate.Designer.cs">
+      <DependentUpon>201606181333257_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityContext.cs" />
     <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\LucaswebContext.cs" />
     <Compile Include="Models\Password.cs" />
     <Compile Include="Models\Pin.cs" />
     <Compile Include="Models\RegisterModel.cs" />
+    <Compile Include="Models\SimpleStringModel.cs" />
     <Compile Include="Models\Sound.cs" />
-    <Compile Include="Models\LucaswebContext.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\GenericModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -349,6 +377,7 @@
     <Content Include="Views\Account\Index.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\Logout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -358,6 +387,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="CodeCraft\Week7\Content\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -366,6 +396,10 @@
     <ProjectReference Include="..\Lucasweb.Contracts\Lucasweb.Contracts.csproj">
       <Project>{b3833647-5752-42b8-b9a9-7ac4e838b9f4}</Project>
       <Name>Lucasweb.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lucasweb.DatabaseAccessors\Lucasweb.DatabaseAccessors.csproj">
+      <Project>{7dcc9f74-d314-46a6-a076-ca3c1c19febb}</Project>
+      <Name>Lucasweb.DatabaseAccessors</Name>
     </ProjectReference>
     <ProjectReference Include="..\Lucasweb.DataContracts\Lucasweb.DataContracts.csproj">
       <Project>{423CE42A-7E5E-44AD-9A9D-0949B91A6710}</Project>
@@ -383,6 +417,11 @@
       <Project>{f7c0b0b7-753e-45c4-b356-ece41f1e035e}</Project>
       <Name>Lucasweb.Utilities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201606181333257_InitialCreate.resx">
+      <DependentUpon>201606181333257_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -102,22 +102,23 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ICharacterUtils.cs" />
     <Compile Include="IEncryptEngine.cs" />
     <Compile Include="IEncryptManager.cs" />
     <Compile Include="IHelloManager.cs" />
+    <Compile Include="IProjectAccessor.cs" />
+    <Compile Include="IProjectManager.cs" />
+    <Compile Include="IUserAccessor.cs" />
+    <Compile Include="IUserManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lucasweb.DataContracts\Lucasweb.DataContracts.csproj">
+      <Project>{423CE42A-7E5E-44AD-9A9D-0949B91A6710}</Project>
+      <Name>Lucasweb.DataContracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

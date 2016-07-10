@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Lucasweb.Contracts;
+using Lucasweb.DataContracts;
+using Lucasweb.Models;
+using Lucasweb.Utilities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +15,8 @@ namespace Lucasweb.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View();
+            List<Project> Projects = ClassFactory.CreateClass<IProjectManager>().GetProjects();
+            return View(Projects);
         }
 
         public ActionResult Projects()

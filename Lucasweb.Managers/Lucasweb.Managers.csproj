@@ -98,25 +98,25 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EncryptManager.cs" />
-    <Compile Include="HelloManager.cs" />
+    <Compile Include="ProjectManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Lucasweb.Contracts\Lucasweb.Contracts.csproj">
       <Project>{B3833647-5752-42B8-B9A9-7AC4E838B9F4}</Project>
       <Name>Lucasweb.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lucasweb.DatabaseAccessors\Lucasweb.DatabaseAccessors.csproj">
+      <Project>{7dcc9f74-d314-46a6-a076-ca3c1c19febb}</Project>
+      <Name>Lucasweb.DatabaseAccessors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lucasweb.DataContracts\Lucasweb.DataContracts.csproj">
+      <Project>{423CE42A-7E5E-44AD-9A9D-0949B91A6710}</Project>
+      <Name>Lucasweb.DataContracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\Lucasweb.Utilities\Lucasweb.Utilities.csproj">
       <Project>{f7c0b0b7-753e-45c4-b356-ece41f1e035e}</Project>

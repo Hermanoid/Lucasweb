@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html>
+<html lang="en-us">
 <head>
     <meta name="viewport" content="width=device-width" />
     @Html.Raw("<title>" + ViewBag.Title + " - Lucasweb </title>")
@@ -32,23 +32,34 @@
         }
         function popupMargin() {
             var sds = $("#settings-dropdown-stuff");
-            sds.css("margin-left",window.innerWidth-sds.width()-15);
+            sds.css("margin-left",$("#headbar").width()-sds.width());
         }
         window.onresize = popupMargin;
     </script>
+    <style>
+        .row {
+            margin-right: 0;
+        }
+
+        .container {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <div id="headbar" class="row Mstrip B-555">
         <div class="Pstrip col-lg-1 col-xs-2">
             <a href="~/" class="H0-75in">
                 <div class="row Mstrip">
-                    <img class="H0-75in" id="lucaslogo" src="~/Content/ProfileImage.png" />
+                    <img class="H0-75in" id="lucaslogo" src="~/Content/ProfileImage.png" alt="Home Icon"/>
                 </div>
             </a>
         </div>
         <div id="setting-dropdown">
             <span onclick="settingPopup()" class="text-right glyphicon glyphicon-menu-down Font24px dropbtn" id="setting-icon"></span>
-            <div id="settings-dropdown-stuff" class="dropdown-content">
+            <div id="settings-dropdown-stuff" class="dropdown-content ZI-2">
                 @{Html.RenderAction("_DropDownStuff", "Shared"); }
             </div>
         </div>

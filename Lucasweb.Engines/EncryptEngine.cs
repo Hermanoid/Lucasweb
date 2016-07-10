@@ -71,7 +71,7 @@ namespace Lucasweb.Engines
             int charPos;
             int newPos;
             bool noProb;
-            foreach(char MC in MCs)
+            foreach (char MC in MCs)
             {
                 charPos = chars.IndexOf(MC);
                 newPos = charPos + Pin;
@@ -80,8 +80,9 @@ namespace Lucasweb.Engines
                 {
                     if (newPos >= chars.Count)
                     {
-                        newPos -= chars.Count-1;
-                    }else
+                        newPos -= chars.Count - 1;
+                    }
+                    else
                     {
                         noProb = true;
                     }
@@ -115,7 +116,7 @@ namespace Lucasweb.Engines
                 {
                     if (newPos <= 0)
                     {
-                        newPos += chars.Count-1;
+                        newPos += chars.Count - 1;
                     }
                     else
                     {
@@ -125,6 +126,18 @@ namespace Lucasweb.Engines
                 decrypted.Add(chars[newPos]);
             }
             return string.Join("", decrypted);
+        }
+
+        public string CreatePassword()
+        {
+            using (RandomNumberGenerator rng = new RNGCryptoServiceProvider())
+            {
+                byte[] tokenData = new byte[32];
+                rng.GetBytes(tokenData);
+
+                string token = Convert.ToBase64String(tokenData);
+                return token;
+            }
         }
     }
 }

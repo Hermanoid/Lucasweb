@@ -1,5 +1,35 @@
-﻿<div>
-    <a href="~/">Home</a>
-    <a href="~/Home/Projects">All Subprojects</a>
-    <a href="~/Home/About">About Lucas</a>
+﻿@model Lucasweb.DataContracts.User
+    <style>
+        .container-fluid{
+            padding-right:0;
+        }
+
+    </style>
+<div class="ZI-2">
+    <h4 class="text-center">Account</h4>
+    @if (Model == null)
+    {
+        <p class="text-default text-center">Welcome, Guest</p>
+        <div class="container-fluid">
+            <div class="row">
+                <a class="btn btn-success col-xs-12 col-md-6" href="~/Account/Register" role="button">Register</a>
+                <a class="btn btn-info col-xs-12 col-md-6" href="~/Account/Login" role="button">Sign In</a>
+            </div>
+        </div>
+
+    }
+    else
+    {
+        <p class="text-default text-center">Welcome, @Model.UserName</p>
+        <div class="container-fluid">
+            <div class="row">
+                <a class="btn btn-primary col-xs-12 col-md-6" href="~/Account/" role="button">My Account</a>
+                <a class="btn btn-danger col-xs-12 col-md-6" href="~/Account/Logout" role="button">Sign Out</a>
+            </div>
+        </div>
+
+    }
+
+
+
 </div>

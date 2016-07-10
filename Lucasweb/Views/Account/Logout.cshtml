@@ -1,0 +1,25 @@
+﻿@model System.String
+@{
+    ViewBag.Title = "Logout";
+}
+
+<h2>Logout</h2>
+
+@if (Model != null)
+{
+    using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <h5>You're currently signed in as @Html.DisplayFor(m => m)</h5>
+        <input type="submit" value="Sign Out" class="btn btn-default" />
+    }
+
+}
+else
+{
+    <h5>You're not currently signed in.</h5>
+    @Html.ActionLink("Sign In","Login","Account")
+}
+
+
+

@@ -11,7 +11,6 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\roslyn\System.Ref
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\roslyn\vbc.exe
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\roslyn\VBCSCompiler.exe
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Lucasweb.Managers.dll.config
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Lucasweb.Managers.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Lucasweb.Managers.pdb
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Lucasweb.Contracts.dll
@@ -36,3 +35,13 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Microsoft.CodeDom
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\obj\Debug\Lucasweb.Managers.csprojResolveAssemblyReference.cache
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\obj\Debug\Lucasweb.Managers.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\obj\Debug\Lucasweb.Managers.pdb
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Lucasweb.DataContracts.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Lucasweb.DataContracts.pdb
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Lucasweb.DatabaseAccessors.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\EntityFramework.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\Lucasweb.DatabaseAccessors.pdb
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Managers\bin\EntityFramework.xml

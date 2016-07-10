@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucasweb.DataContracts", "L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucasweb.Managers", "Lucasweb.Managers\Lucasweb.Managers.csproj", "{09250075-A965-4469-8648-D3818F03CF11}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. Databases", "6. Databases", "{61CA76D2-ABC4-4AA9-834F-C3681F92EFE2}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LucaswebContext", "LucaswebContext\LucaswebContext.sqlproj", "{F2D3B671-CD9B-4AF2-99B5-DC11F92C2FE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +65,12 @@ Global
 		{09250075-A965-4469-8648-D3818F03CF11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09250075-A965-4469-8648-D3818F03CF11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09250075-A965-4469-8648-D3818F03CF11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2D3B671-CD9B-4AF2-99B5-DC11F92C2FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2D3B671-CD9B-4AF2-99B5-DC11F92C2FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2D3B671-CD9B-4AF2-99B5-DC11F92C2FE0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F2D3B671-CD9B-4AF2-99B5-DC11F92C2FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2D3B671-CD9B-4AF2-99B5-DC11F92C2FE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2D3B671-CD9B-4AF2-99B5-DC11F92C2FE0}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,5 +83,6 @@ Global
 		{B3833647-5752-42B8-B9A9-7AC4E838B9F4} = {09462397-B56B-4626-A722-54D1BBFBC159}
 		{423CE42A-7E5E-44AD-9A9D-0949B91A6710} = {09462397-B56B-4626-A722-54D1BBFBC159}
 		{09250075-A965-4469-8648-D3818F03CF11} = {F57924E6-582C-4A4B-81AA-22BD5A4C6AFA}
+		{F2D3B671-CD9B-4AF2-99B5-DC11F92C2FE0} = {61CA76D2-ABC4-4AA9-834F-C3681F92EFE2}
 	EndGlobalSection
 EndGlobal

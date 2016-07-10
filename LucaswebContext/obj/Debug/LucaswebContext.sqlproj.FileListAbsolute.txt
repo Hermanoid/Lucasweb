@@ -1,0 +1,5 @@
+C:\Users\lucas\Documents\GitHub\Lucasweb\LucaswebContext\bin\Debug\LucaswebContext.dacpac
+C:\Users\lucas\Documents\GitHub\Lucasweb\LucaswebContext\bin\Debug\LucaswebContext.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\LucaswebContext\bin\Debug\LucaswebContext.pdb
+C:\Users\lucas\Documents\GitHub\Lucasweb\LucaswebContext\obj\Debug\LucaswebContext.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\LucaswebContext\obj\Debug\LucaswebContext.pdb

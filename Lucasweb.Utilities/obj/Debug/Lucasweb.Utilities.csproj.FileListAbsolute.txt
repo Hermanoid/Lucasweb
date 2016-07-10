@@ -11,7 +11,6 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\roslyn\System.Re
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\roslyn\vbc.exe
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\roslyn\VBCSCompiler.exe
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Lucasweb.Utilities.dll.config
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Lucasweb.Utilities.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Lucasweb.Utilities.pdb
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\DontPanic.ServiceHelpers.dll
@@ -38,3 +37,11 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Lucasweb.Contrac
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\obj\Debug\Lucasweb.Utilities.csprojResolveAssemblyReference.cache
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\obj\Debug\Lucasweb.Utilities.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\obj\Debug\Lucasweb.Utilities.pdb
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Lucasweb.DataContracts.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\EntityFramework.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Lucasweb.DataContracts.pdb
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\EntityFramework.xml
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Utilities\bin\Microsoft.AspNet.Identity.Core.xml
