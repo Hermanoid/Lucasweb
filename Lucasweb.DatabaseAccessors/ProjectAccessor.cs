@@ -12,37 +12,20 @@ namespace Lucasweb.DatabaseAccessors
     public class ProjectAccessor : IProjectAccessor
     {
         private DatabaseContext db = new DatabaseContext();
-        
-        private static DataContracts.Project Convert(EntityFramework.Project EFProj)
+
+        public List<DataContracts.Project> GetHomeProjects()
         {
-            return new DataContracts.Project()
-            {
-                DisplayName=EFProj.DisplayName,
-                glyphClass=EFProj.glyphClass,
-                imgSrc=EFProj.imgSrc,
-                isGlyph=EFProj.isGlyph,
-                ProjectId=EFProj.ProjectId,
-                URL=EFProj.URL
-            };
+            return GetProjects()
+                .Where(p => p.isHome)
+                .ToList();
         }
 
         public List<DataContracts.Project> GetProjects()
         {
-            db.Projects.Add(new EntityFramework.Project()
-            {
-                DisplayName="Home",
-                glyphClass="glyphicon-home",
-                imgSrc=null,
-                isGlyph=true,
-                URL="~/Home"
-            });
-            db.SaveChanges();
             List<EntityFramework.Project> EFProjs = db.Projects.ToList();
-            List<DataContracts.Project> DCProjs = new List<DataContracts.Project>();
-            foreach(EntityFramework.Project EFProj in EFProjs)
-            {
-                DCProjs.Add(Convert(EFProj));
-            }
+            List<DataContracts.Project> DCProjs = EFProjs
+                .Select(proj => (DataContracts.Project)proj)
+                .ToList();
 
             return DCProjs;
         }

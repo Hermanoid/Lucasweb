@@ -15,7 +15,7 @@ namespace Lucasweb.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            List<Project> Projects = ClassFactory.CreateClass<IProjectManager>().GetProjects();
+            List<Project> Projects = ClassFactory.CreateClass<IProjectManager>().GetHomeProjects();
             return View(Projects);
         }
 

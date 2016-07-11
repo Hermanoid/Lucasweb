@@ -18,6 +18,6 @@ namespace Lucasweb.DataContracts
 
         public string DisplayName { get; set; }
         public int ProjectId { get; set; }
-
+        public bool isHome { get; set; }
     }
 }

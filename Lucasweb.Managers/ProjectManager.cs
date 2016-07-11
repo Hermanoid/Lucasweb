@@ -11,6 +11,11 @@ namespace Lucasweb.Managers
 {
     public class ProjectManager : IProjectManager
     {
+        public List<Project> GetHomeProjects()
+        {
+            return ClassFactory.CreateClass<IProjectAccessor>().GetHomeProjects();
+        }
+
         public List<Project> GetProjects()
         {
             return ClassFactory.CreateClass<IProjectAccessor>().GetProjects();

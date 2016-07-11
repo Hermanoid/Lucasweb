@@ -10,5 +10,7 @@ namespace Lucasweb.Contracts
     public interface IProjectManager
     {
         List<Project> GetProjects();
+
+        List<Project> GetHomeProjects();
     }
 }
