@@ -10,5 +10,9 @@ namespace Lucasweb.Models
 {
     public class IdentityContext : IdentityDbContext<AppUserId>
     {
+        public IdentityContext() : base("name=LucaswebContext")
+        {
+
+        }
     }
 }

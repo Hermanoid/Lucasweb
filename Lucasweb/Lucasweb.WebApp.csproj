@@ -176,6 +176,20 @@
     <Content Include="CodeCraft\Week7\images\20160512_144236421_iOS.JPG" />
     <Content Include="CodeCraft\Week7\Scripts\bootstrap.js" />
     <Content Include="CodeCraft\Week7\Scripts\bootstrap.min.js" />
+    <Content Include="Areas\Manage\Views\web.config" />
+    <Content Include="Areas\Manage\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Manage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Manage\Views\Projects\Delete.cshtml" />
+    <Content Include="Areas\Manage\Views\Projects\Details.cshtml" />
+    <Content Include="Areas\Manage\Views\Projects\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\Projects\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\Users\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\Projects\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\Roles\Index.cshtml" />
+    <Content Include="Areas\Manage\Views\Roles\Edit.cshtml" />
+    <Content Include="Areas\Manage\Views\Shared\DisplayTemplates\H2.cshtml" />
+    <Content Include="Areas\Manage\Views\Roles\Add.cshtml" />
+    <Content Include="Areas\Manage\Views\Roles\Create.cshtml" />
     <None Include="CodeCraft\Week7\Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="CodeCraft\Week7\Scripts\jquery-1.9.1.js" />
     <Content Include="CodeCraft\Week7\Scripts\jquery-1.9.1.min.js" />
@@ -207,6 +221,8 @@
     <Content Include="CodeCraft\Week9\Scripts\Sample002Code.js" />
     <Content Include="CodeCraft\Week9\Scripts\Sample003Code.js" />
     <Content Include="CodeCraft\Week9\Trade.html" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\BlackBoxLogo.ico" />
     <Content Include="Content\Images\BlankProfileImage.bmp" />
     <Content Include="Content\js\setting-dropdown.js" />
@@ -225,6 +241,7 @@
     <Content Include="Content\lucasss.css" />
     <Content Include="Content\ProfileImage.png" />
     <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
@@ -252,10 +269,15 @@
     <None Include="CodeCraft\Week9\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="Properties\PublishProfiles\GoDaddy Web.pubxml" />
     <None Include="Properties\PublishProfiles\GoDaddy.pubxml" />
     <None Include="Properties\PublishProfiles\lucasweb-webapp.pubxml" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
     <None Include="scripts\jquery.validate-vsdoc.js" />
@@ -263,6 +285,7 @@
     <Content Include="scripts\jquery.validate.min.js" />
     <Content Include="scripts\jquery.validate.unobtrusive.js" />
     <Content Include="scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="scripts\Soundweb.js" />
     <Content Include="Views\AncientWeb\contact.js" />
     <Content Include="Views\AncientWeb\masonry.pkgd.min.js" />
@@ -295,6 +318,14 @@
   <ItemGroup>
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Manage\Controllers\ProjectsController.cs" />
+    <Compile Include="Areas\Manage\Controllers\RolesController.cs" />
+    <Compile Include="Areas\Manage\Controllers\UsersController.cs" />
+    <Compile Include="Areas\Manage\ManageAreaRegistration.cs" />
+    <Compile Include="Areas\Manage\Models\RoleModData.cs" />
+    <Compile Include="Areas\Manage\Models\SearchType.cs" />
+    <Compile Include="Areas\Manage\Models\UserRoleData.cs" />
+    <Compile Include="Areas\Manage\Models\UserSearchRequest.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AncientWebController.cs" />
     <Compile Include="Controllers\EncrypterController.cs" />
@@ -305,11 +336,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201606181333257_InitialCreate.cs" />
-    <Compile Include="Migrations\201606181333257_InitialCreate.Designer.cs">
-      <DependentUpon>201606181333257_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityContext.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\LucaswebContext.cs" />
@@ -413,15 +439,14 @@
       <Project>{09250075-a965-4469-8648-d3818f03cf11}</Project>
       <Name>Lucasweb.Managers</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Lucasweb.Shared.Resources\Lucasweb.Shared.Resources.csproj">
+      <Project>{a3e485d6-20f0-41cc-b2cc-ceffa6132913}</Project>
+      <Name>Lucasweb.Shared.Resources</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Lucasweb.Utilities\Lucasweb.Utilities.csproj">
       <Project>{f7c0b0b7-753e-45c4-b356-ece41f1e035e}</Project>
       <Name>Lucasweb.Utilities</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201606181333257_InitialCreate.resx">
-      <DependentUpon>201606181333257_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

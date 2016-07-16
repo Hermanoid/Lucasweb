@@ -131,5 +131,5 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb\bin\Microsoft.Owin.Security.OA
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb\bin\Newtonsoft.Json.xml
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb\bin\Lucasweb.DatabaseAccessors.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb\bin\Lucasweb.DatabaseAccessors.pdb
-C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb\obj\Debug\Lucasweb.Migrations.InitialCreate.resources
-C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb\obj\Debug\Lucasweb.WebApp.csproj.GenerateResource.Cache
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb\bin\Lucasweb.Shared.Resources.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb\bin\Lucasweb.Shared.Resources.pdb

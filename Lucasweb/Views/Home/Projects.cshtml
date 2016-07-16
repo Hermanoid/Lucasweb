@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<Lucasweb.DataContracts.Project>
 @{
     ViewBag.Title = "All Subprojects - Lucasweb";
 }
@@ -22,34 +22,20 @@
     </div>
     <div class="row">
         <div class="container">
-            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 text-center HB-CCC PT-15px PB-10px H-85px" onclick="window.location='../'">
-                <span class="glyphicon glyphicon-home Font24px"></span>
-                <p>Home</p>
-            </div>
-            <div title="My dad's business.  I designed a majority of the UI (stuff that you see) in it." class="col-xs-6 col-sm-4 col-md-3 col-lg-2 text-center HB-CCC PT-15px PB-10px H-85px" onclick="window.location = 'http://blackboxscore.com/'">
-                <img class="Font24px" src="~/Content/Images/BlackBoxLogo.ico" />
-                <p>Black Box</p>
-            </div>
-            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 text-center HB-CCC PT-15px PB-10px H-85px" onclick="window.location='../Soundweb/'">
-                <span class="glyphicon glyphicon-headphones Font24px"></span>
-                <p>Soundweb</p>
-            </div>
-            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 text-center HB-CCC PT-15px PB-10px H-85px" onclick="window.location='../Ancientweb/'">
-                <img class="Font24px" src="~/Content/lucaslogo.png" />
-                <p>AncientWeb</p>
-            </div>
-            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 text-center HB-CCC PT-15px PB-10px H-85px" onclick="window.location='../Encrypter/'">
-                <span class="glyphicon glyphicon-retweet Font24px" aria-hidden="true"></span>
-                <p>Encrypter</p>
-            </div>
-            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 text-center HB-CCC PT-15px PB-10px H-85px" onclick="window.location='../CodeCraft/'">
-                <span class="glyphicon glyphicon-globe Font24px" aria-hidden="true"></span>
-                <p>CodeCraft</p>
-            </div>
-            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 text-center HB-CCC PT-15px PB-10px H-85px" onclick="window.location">
-                <span class="glyphicon"></span>
-                <p></p>
-            </div>
+            @foreach (var item in Model)
+            {
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 text-center HB-CCC PT-15px PB-10px H-85px" onclick="window.location='../@item.URL'">
+                        @if (item.isGlyph)
+                        {
+                            <span class="glyphicon @item.glyphClass Font24px" aria-hidden="true"></span>
+                        }
+                        else
+                        {
+                            <img class="Font24px" src="@item.imgSrc" />
+                        }
+                        <p>@item.DisplayName</p>
+                    </div>
+            }
         </div>
     </div>
 </div>

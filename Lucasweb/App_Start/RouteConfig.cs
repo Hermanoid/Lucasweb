@@ -18,7 +18,11 @@ namespace Lucasweb
             //    url: "CodeCraft/{action}/{WeekId}/{htmlFile}",
             //    defaults: new { controller = "Codecraft", action = "Index" }
             //    );
-
+            routes.MapRoute(
+                name: "Manage",
+                url: "Manage/{action}/{table}/{id}",
+                defaults: new { controller = "Manage", action = "Index", table = UrlParameter.Optional, id = UrlParameter.Optional }
+                );
 
             routes.MapRoute(
                 name: "Default",
@@ -26,7 +30,7 @@ namespace Lucasweb
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
 
-           
+
         }
     }
 }

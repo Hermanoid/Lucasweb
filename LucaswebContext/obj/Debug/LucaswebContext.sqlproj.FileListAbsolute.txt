@@ -3,3 +3,7 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\LucaswebContext\bin\Debug\LucaswebConte
 C:\Users\lucas\Documents\GitHub\Lucasweb\LucaswebContext\bin\Debug\LucaswebContext.pdb
 C:\Users\lucas\Documents\GitHub\Lucasweb\LucaswebContext\obj\Debug\LucaswebContext.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\LucaswebContext\obj\Debug\LucaswebContext.pdb
+C:\Users\lucas\Documents\GitHub\Lucasweb\LucaswebContext\obj\Debug\Model.xml
+C:\Users\lucas\Documents\GitHub\Lucasweb\LucaswebContext\obj\Debug\refactor.xml
+C:\Users\lucas\Documents\GitHub\Lucasweb\LucaswebContext\obj\Debug\postdeploy.sql
+C:\Users\lucas\Documents\GitHub\Lucasweb\LucaswebContext\obj\Debug\predeploy.sql
