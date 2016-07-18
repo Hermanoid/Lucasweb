@@ -5,6 +5,7 @@
 <h3>
     Add a role to @Model.UserName's account
 </h3>
+<br/>
 <hr/>
 @using (Html.BeginForm())
 {
@@ -22,11 +23,12 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Find" class="btn btn-default" />
+                <input type="submit" value="Add" class="btn btn-default" />
             </div>
         </div>
 
-        @Html.ActionLink("Create New Role","Create")
+        @Html.ActionLink("Create New Role","Create") |
+        @Html.ActionLink("Back To "+Model.UserName,"Edit",new { User=Model.UserName})
     </div>
 }
 

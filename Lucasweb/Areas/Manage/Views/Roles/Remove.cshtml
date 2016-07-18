@@ -1,0 +1,22 @@
+﻿@model Lucasweb.Areas.Manage.Models.RoleModData
+@{
+    ViewBag.Title = "Remove";
+    ViewBag.returnUrl = TempData["returnUrl"];
+}
+
+<h2>Remove Role</h2>
+<hr />
+<h4>Are you sure you want to remove Role '@Model.Role.Text'  from '@Model.UserName's account?</h4>
+<div class="form-inline">
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            <input type="submit" class="btn btn-danger" value="Yes" />
+            <a href="@ViewBag.returnUrl" class="btn btn-success">
+                Nope
+            </a>
+        </div>
+    }
+</div>

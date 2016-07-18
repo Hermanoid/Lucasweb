@@ -104,7 +104,7 @@ namespace Lucasweb.Areas.Manage.Controllers
             }
             catch (InvalidOperationException e)
             {
-                if(e.Message == "Sequence contains no elements")
+                if (e.Message == "Sequence contains no elements")
                 {
                     FailedSearchMessage();
                     return View(req);
@@ -114,7 +114,8 @@ namespace Lucasweb.Areas.Manage.Controllers
                     ThrowModelstateError(e);
                     return View(req);
                 }
-            }catch(Exception e)
+            }
+            catch (Exception e)
             {
                 ThrowModelstateError(e);
                 return View(req);
@@ -136,12 +137,13 @@ namespace Lucasweb.Areas.Manage.Controllers
             AppUserId AppUser;
             try
             {
-                AppUser = Idb.Users.First(user => user.UserName==User);
-            }catch(InvalidOperationException e)
+                AppUser = Idb.Users.First(user => user.UserName == User);
+            }
+            catch (InvalidOperationException e)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.NotFound, $"The supplied User ({User}) could not be found: {e.Message}");
             }
-            
+
             UserRoleData URD = new UserRoleData();
             URD.UserName = AppUser.UserName;
             URD.Roles = AppUser.Roles
@@ -157,9 +159,10 @@ namespace Lucasweb.Areas.Manage.Controllers
             try
             {
                 AppUser = Idb.Users.First(user => user.UserName == User);
-            }catch(InvalidOperationException e)
+            }
+            catch (InvalidOperationException e)
             {
-                return new HttpStatusCodeResult(HttpStatusCode.NotFound, "The Supplied UserName does not exist in our database:  "+e.Message);
+                return new HttpStatusCodeResult(HttpStatusCode.NotFound, "The Supplied UserName does not exist in our database:  " + e.Message);
             }
             RoleModData RMD = new RoleModData()
             {
@@ -176,32 +179,59 @@ namespace Lucasweb.Areas.Manage.Controllers
         {
             if (ModelState.IsValid)
             {
+                AppUserId UserFromRoute;
                 try
                 {
-                    AppUserId user = Idb.Users.Find(RMD.UserId);
-                }catch(Exception e)
-                {
-                    ModelState.AddModelError("", "The suppplied UserId is invalid:  "+e.Message);
-                    return View(RMD);
+                    var Role = Idb.Roles.Find(RMD.Role.Text);
                 }
-                try
-                {
-                    var Role = Idb.Roles.Find(RMD.Role.Value);
-                }catch(Exception e)
+                catch (Exception e)
                 {
                     ModelState.AddModelError("", "The suppplied RoleId is invalid:  " + e.Message);
                     return View(RMD);
                 }
-                AppIdManager.AddToRole(RMD.UserId, RMD.Role.Value);
-                return RedirectToAction("Edit", new { UserId = RMD.UserId });
-                
+
+                ExtractUserFromRoute(RMD, out UserFromRoute);
+                bool UserHasRole = true;
+                try
+                {
+                    var Role = UserFromRoute.Roles.First(role => role.RoleId == RMD.Role.Value);
+                }
+                catch (InvalidOperationException)
+                {
+                    UserHasRole = false;
+                }
+                catch (Exception e)
+                {
+                    throw new Exception($"An Unexpected Exception occurred while confirming the User '{UserFromRoute.UserName}' does not already have Role '{RMD.Role.Text}':  {Environment.NewLine}'{e.Message}'.{Environment.NewLine}  See Inner Exception for stack trace or more details.", e);
+                }
+
+                if (UserHasRole)
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.Conflict, $"Role to add to User {UserFromRoute.UserName} already belongs to that user.");
+                }
+                if (RMD.Role.Text == null)
+                {
+                    RMD.Role.Text = Idb.Roles.Find(RMD.Role.Value).Name;
+                }
+                AppIdManager.AddToRole(RMD.UserId, RMD.Role.Text);
+                return RedirectToAction("Edit", new { User = RMD.UserName });
+
             }
             return View(RMD);
         }
 
+        private void ExtractUserFromRoute(RoleModData RMD, out AppUserId UserFromRoute)
+        {
+            string RouteDataUser = (string)Request.RequestContext.RouteData.Values["User"];
+
+            UserFromRoute = Idb.Users.First(user => user.UserName == RouteDataUser);
+            RMD.UserId = UserFromRoute.Id;
+            RMD.UserName = UserFromRoute.UserName;
+        }
+
         private static List<SelectListItem> Convert(List<Microsoft.AspNet.Identity.EntityFramework.IdentityRole> Roles)
         {
-            return Roles.Select(role => new SelectListItem() { Text = role.Name, Value = role.Name }).ToList();
+            return Roles.Select(role => new SelectListItem() { Text = role.Name, Value = role.Id }).ToList();
         }
 
         public ActionResult Create()
@@ -216,11 +246,12 @@ namespace Lucasweb.Areas.Manage.Controllers
             if (ModelState.IsValid)
             {
                 IdentityRole toCreate = new IdentityRole(RMD.RoleToCreate);
-                if (Idb.Roles.Where(role => role.Name == toCreate.Name).ToList().Count>0)
+                if (Idb.Roles.Where(role => role.Name == toCreate.Name).ToList().Count > 0)
                 {
                     ModelState.AddModelError("", "The Supplied Role Name Already Exists.");
                     return View(RMD);
-                }else
+                }
+                else
                 {
                     Idb.Roles.Add(toCreate);
                     Idb.SaveChanges();
@@ -228,6 +259,61 @@ namespace Lucasweb.Areas.Manage.Controllers
                 }
             }
             return View(RMD);
+        }
+
+        public ActionResult Remove(string User, string Role)
+        {
+            IdentityRole IdRole;
+            AppUserId AppUser;
+
+            
+            try
+            {
+                IdRole = Idb.Roles.First(role => role.Name == Role);
+            }catch(InvalidOperationException)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest, "The supplied role to remove does not exist.");
+            }
+            try
+            {
+                AppUser = Idb.Users.First(user => user.UserName == User);
+            }catch(InvalidOperationException)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest, "The Supplied User to remove from does not exist.");
+            }
+
+
+
+            RoleModData RMD = new RoleModData()
+            {
+                UserName = AppUser.UserName,
+                Role = new SelectListItem()
+                {
+                    Text = Role
+                }
+            };
+
+            return View(RMD);
+        }
+
+        [HttpPost, ActionName("Remove")]
+        [ValidateAntiForgeryToken]
+        public ActionResult RemoveConfirmed(string User, string Role)
+        {
+            if (ModelState.IsValid)
+            {
+                AppUserId AppUser = Idb.Users.First(user => user.UserName == User);
+                AppIdManager.RemoveFromRole(AppUser.Id, Role);
+                if (ViewBag.returnUrl == null)
+                {
+                    return RedirectToAction("Edit", new { User = User });
+                }else
+                {
+                    return Redirect(ViewBag.returnUrl.ToString());
+                }
+            }
+
+            return View();
         }
     }
 }

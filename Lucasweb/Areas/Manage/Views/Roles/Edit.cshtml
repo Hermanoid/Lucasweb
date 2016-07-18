@@ -1,4 +1,5 @@
 ﻿@model Lucasweb.Areas.Manage.Models.UserRoleData
+@{TempData["returnUrl"] = Url.Action("Edit", new { User = Model.UserName });}
 @{
     ViewBag.Title = "Edit";
 }
@@ -6,7 +7,7 @@
 @Html.DisplayFor(model => model.UserName,"H2")
 <h3>Edit @Model.UserName's Roles</h3>
 <hr/>
-@Html.ActionLink("Add", "Add",new { UserId=Model.Id})
+@Html.ActionLink("Add", "Add",new { User=Model.UserName})
 <table class="table table-striped">
     <tr>
         <th>
@@ -29,9 +30,9 @@
                 @Html.DisplayFor(role => Role.Name)
             </td>
             <td>
-                @Html.ActionLink("Remove","Remove",new { User=Model.UserName , RoleId=Role.Id}) 
+                @Html.ActionLink("Remove","Remove",new { User=Model.UserName , Role=Role.Name}) 
             </td>
         </tr>
     }
-
 </table>
+@Html.ActionLink("Back To Find", "Index")

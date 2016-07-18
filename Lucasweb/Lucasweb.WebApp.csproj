@@ -190,6 +190,7 @@
     <Content Include="Areas\Manage\Views\Shared\DisplayTemplates\H2.cshtml" />
     <Content Include="Areas\Manage\Views\Roles\Add.cshtml" />
     <Content Include="Areas\Manage\Views\Roles\Create.cshtml" />
+    <Content Include="Areas\Manage\Views\Roles\Remove.cshtml" />
     <None Include="CodeCraft\Week7\Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="CodeCraft\Week7\Scripts\jquery-1.9.1.js" />
     <Content Include="CodeCraft\Week7\Scripts\jquery-1.9.1.min.js" />

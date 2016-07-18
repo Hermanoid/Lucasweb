@@ -17,7 +17,7 @@ namespace Lucasweb.Areas.Manage
             context.MapRoute(
                     "Manage_Role_Selector",
                     "Manage/Roles/{action}/{User}/{Role}",
-                    new { controller = "Roles", action = "Add", RoleId = UrlParameter.Optional }
+                    new { controller = "Roles", action = "Add", Role = UrlParameter.Optional }
                 );
 
             context.MapRoute(
