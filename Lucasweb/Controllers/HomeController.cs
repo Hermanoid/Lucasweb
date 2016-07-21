@@ -21,7 +21,7 @@ namespace Lucasweb.Controllers
 
         public ActionResult Projects()
         {
-            return View();
+            return View(ClassFactory.CreateClass<IProjectManager>().GetProjects());
         }
 
         public ActionResult About()

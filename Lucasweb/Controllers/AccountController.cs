@@ -8,6 +8,7 @@ using Microsoft.Owin.Security;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
@@ -57,7 +58,7 @@ namespace Lucasweb.Controllers
             List<string> sRoles = new List<string>();
             foreach (var Role in AUI.Roles)
             {
-                sRoles.Add(db.Roles.Find(Role.UserId).Name);
+                sRoles.Add(db.Roles.Find(Role.RoleId).Name);
             }
             Tuple<AppUserId, User, List<string>> ViewModels = new Tuple<AppUserId, User, List<string>>(AUI, user, sRoles);
             return View(ViewModels);
@@ -152,6 +153,11 @@ namespace Lucasweb.Controllers
         public async Task<ActionResult> Login(LoginModel lm, string returnUrl)
         {
             AppUserId AUI = AppIdManager.Find(lm.UserName, lm.Password);
+            if (AUI == null)
+            {
+                ModelState.AddModelError("", "Invalid Username or Password");
+                return View(lm);
+            }
             await SignInAsync(AUI, true);
             if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
             {
@@ -175,6 +181,35 @@ namespace Lucasweb.Controllers
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
             return RedirectToAction("Index");
+        }
+
+        public ActionResult Public(string UserName)
+        {
+            if(UserName == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            AppUserId AppUser;
+            try
+            {
+                AppUser = db.Users.First(appUser => appUser.UserName == UserName);
+            }
+            catch (InvalidOperationException)
+            {
+                return HttpNotFound();
+            }
+            User userData = UserDataManager.GetUser(AppUser.UserId);
+            if (AppUser == null || userData == null)
+            {
+                return HttpNotFound();
+            }
+            PublicUserData PUD = new PublicUserData()
+            {
+                UserName = AppUser.UserName,
+                FirstName = userData.FirstName,
+                LastName = userData.LastName
+            };
+            return View(PUD);
         }
     }
 }

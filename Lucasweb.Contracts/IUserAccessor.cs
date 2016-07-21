@@ -11,5 +11,7 @@ namespace Lucasweb.Contracts
     {
         int CreateUser(User user);
         User GetUserById(int userId);
+        List<User> GetUsersBetween(int f_index, int l_index);
+        int GetTotalUsers();
     }
 }

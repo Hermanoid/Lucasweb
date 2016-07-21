@@ -10,19 +10,21 @@ namespace Lucasweb.Models
     {
         public int SoundID { get; set; }
 
+        [Required]
         [DataType(DataType.Url)]
         public string Location { get; set; }
 
         public string type { get; set; }
 
+        [Required]
         [Display(ShortName ="Title")]
         [DataType(DataType.Text)]
         public string Name { get; set; }
 
-        [Display(ShortName ="Creator")]
+        [Display(Name ="Creator")]
         public string OwnerName { get; set; }
 
-        [Display(ShortName ="Upload Date")]
+        [Display(Name ="Upload Date")]
         [DataType(DataType.DateTime)]
         public DateTime UploadTime { get; set; }
 

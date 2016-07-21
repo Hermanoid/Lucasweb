@@ -39,7 +39,10 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.OwnerName)
+            <a href="@Url.Action("Public", "Account", new { UserName = Model.OwnerName })">
+                @Html.DisplayFor(model => model.OwnerName)
+                </a>
+
         </dd>
 
         <dt>
@@ -61,6 +64,5 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.SoundID }) |
     @Html.ActionLink("Back to Home", "Index")
 </p>
