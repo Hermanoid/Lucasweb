@@ -11,7 +11,6 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\roslyn\System.Refl
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\roslyn\vbc.exe
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\roslyn\VBCSCompiler.exe
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Lucasweb.Engines.dll.config
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Lucasweb.Engines.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Lucasweb.Engines.pdb
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\DontPanic.ServiceHelpers.dll
@@ -36,3 +35,7 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Lucasweb.Contracts
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Lucasweb.DataContracts.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Lucasweb.Contracts.pdb
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Lucasweb.DataContracts.pdb
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.Engines\bin\Microsoft.AspNet.Identity.Core.xml

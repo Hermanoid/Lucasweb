@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Lucasweb.Models.Sound>
+﻿@model IEnumerable<Tuple<Lucasweb.Models.Sound,string>>
 
 @{
     ViewBag.Title = "Soundweb";
@@ -24,11 +24,10 @@
 <div class="row">
     @foreach (var item in Model)
     {
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 text-center HB-CCC Ptop5px" onclick="PlayAudio('@item.Location.ToString()', '@item.SoundID.ToString()');">
-            <span class="glyphicon glyphicon-play-circle Font40px C-337ab7" id="PlayButton-@item.SoundID.ToString()"></span>
-            <a href="~/Soundweb/Details/@item.SoundID.ToString()">
-                <p class="text-center">@item.Name.ToString()</p>
-            </a>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 text-center HB-CCC Ptop5px" onclick="PlayAudio('@item.Item1.Location.ToString()', '@item.Item1.SoundID.ToString()');">
+            <span class="glyphicon glyphicon-play-circle Font40px C-337ab7" id="PlayButton-@item.Item1.SoundID.ToString()"></span>
+            
+            @Html.ActionLink(item.Item1.Name,item.Item2,new { id = item.Item1.SoundID },htmlAttributes:new { @class = "text-center"})
         </div>
 
 

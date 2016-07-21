@@ -24,7 +24,7 @@
         <div class="container">
             @foreach (var item in Model)
             {
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 text-center HB-CCC PT-15px PB-10px H-85px" onclick="window.location='../@item.URL'">
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 text-center HB-CCC PT-15px PB-10px H-85px" onclick="window.location='@item.URL'">
                         @if (item.isGlyph)
                         {
                             <span class="glyphicon @item.glyphClass Font24px" aria-hidden="true"></span>

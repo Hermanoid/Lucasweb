@@ -191,6 +191,7 @@
     <Content Include="Areas\Manage\Views\Roles\Add.cshtml" />
     <Content Include="Areas\Manage\Views\Roles\Create.cshtml" />
     <Content Include="Areas\Manage\Views\Roles\Remove.cshtml" />
+    <Content Include="Areas\Manage\Views\Home\Index.cshtml" />
     <None Include="CodeCraft\Week7\Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="CodeCraft\Week7\Scripts\jquery-1.9.1.js" />
     <Content Include="CodeCraft\Week7\Scripts\jquery-1.9.1.min.js" />
@@ -241,7 +242,7 @@
     <Content Include="Content\lucaslogo.png" />
     <Content Include="Content\lucasss.css" />
     <Content Include="Content\ProfileImage.png" />
-    <Content Include="Content\Site.css" />
+    <EmbeddedResource Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
@@ -319,14 +320,17 @@
   <ItemGroup>
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Manage\Controllers\HomeController.cs" />
     <Compile Include="Areas\Manage\Controllers\ProjectsController.cs" />
     <Compile Include="Areas\Manage\Controllers\RolesController.cs" />
     <Compile Include="Areas\Manage\Controllers\UsersController.cs" />
     <Compile Include="Areas\Manage\ManageAreaRegistration.cs" />
+    <Compile Include="Areas\Manage\Models\ManageHomeItem.cs" />
     <Compile Include="Areas\Manage\Models\RoleModData.cs" />
     <Compile Include="Areas\Manage\Models\SearchType.cs" />
     <Compile Include="Areas\Manage\Models\UserRoleData.cs" />
     <Compile Include="Areas\Manage\Models\UserSearchRequest.cs" />
+    <Compile Include="Areas\Manage\Models\UsersModel.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AncientWebController.cs" />
     <Compile Include="Controllers\EncrypterController.cs" />
@@ -337,11 +341,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201607211559557_Sound.cs" />
+    <Compile Include="Migrations\201607211559557_Sound.Designer.cs">
+      <DependentUpon>201607211559557_Sound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityContext.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\LucaswebContext.cs" />
     <Compile Include="Models\Password.cs" />
     <Compile Include="Models\Pin.cs" />
+    <Compile Include="Models\PublicUserData.cs" />
     <Compile Include="Models\RegisterModel.cs" />
     <Compile Include="Models\SimpleStringModel.cs" />
     <Compile Include="Models\Sound.cs" />
@@ -405,6 +415,7 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\Logout.cshtml" />
+    <Content Include="Views\Account\Public.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -448,6 +459,11 @@
       <Project>{f7c0b0b7-753e-45c4-b356-ece41f1e035e}</Project>
       <Name>Lucasweb.Utilities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201607211559557_Sound.resx">
+      <DependentUpon>201607211559557_Sound.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

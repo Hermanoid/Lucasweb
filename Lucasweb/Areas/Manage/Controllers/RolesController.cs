@@ -7,37 +7,40 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Net;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Mvc;
 
 namespace Lucasweb.Areas.Manage.Controllers
 {
+    [Authorize(Roles = "Admin", Users ="Hermanoid")]
     public class RolesController : Controller
     {
         private UserIdentityManager _appIdManager;
 
         private IdentityContext Idb = new IdentityContext();
-        private List<SelectListItem> RequestTypeOptions = new List<SelectListItem>()
+        private List<SelectListItem> RequestTypeOptions { get
             {
-                new SelectListItem()
+                List<SelectListItem> toReturn = new List<SelectListItem>();
+                foreach(var item in Enum.GetValues(typeof(SearchType)))
                 {
-                    Text="Id",
-                    Value="User Id",
-                    Selected=true
-                },
-                new SelectListItem()
-                {
-                    Text="Username",
-                    Value="UserName",
-                },
-                new SelectListItem()
-                {
-                    Text="Email",
-                    Value="Email"
+                    toReturn.Add(
+                        new SelectListItem()
+                        {
+                            Text = item.ToString(),
+                            Value = item.ToString()
+                        });
                 }
-            };
+                var UserNameIndex = toReturn.IndexOf(toReturn.Find(item => item.Text == "UserName"));
+                if (UserNameIndex != -1)
+                {
+                    toReturn[UserNameIndex].Selected = true;
+                }
+                return toReturn;
+            } }
 
         public UserIdentityManager AppIdManager
         {
@@ -156,6 +159,10 @@ namespace Lucasweb.Areas.Manage.Controllers
         public ActionResult Add(string User)
         {
             AppUserId AppUser;
+            if (User == null)
+            {
+                return RedirectToAction("Index");
+            }
             try
             {
                 AppUser = Idb.Users.First(user => user.UserName == User);
@@ -166,7 +173,7 @@ namespace Lucasweb.Areas.Manage.Controllers
             }
             RoleModData RMD = new RoleModData()
             {
-                RoleOptions = Convert(Idb.Roles.ToList()),
+                RoleOptions2 = new SelectList(Idb.Roles.ToList().Select(role => role.Name)),
                 UserId = AppUser.Id,
                 UserName = AppUser.UserName
             };
@@ -179,10 +186,11 @@ namespace Lucasweb.Areas.Manage.Controllers
         {
             if (ModelState.IsValid)
             {
+                RMD.RoleOptions = Convert(Idb.Roles.ToList());
                 AppUserId UserFromRoute;
                 try
                 {
-                    var Role = Idb.Roles.Find(RMD.Role.Text);
+                    var Role = Idb.Roles.Find(Request.Form["RoleToCreate"]);
                 }
                 catch (Exception e)
                 {
@@ -209,11 +217,7 @@ namespace Lucasweb.Areas.Manage.Controllers
                 {
                     return new HttpStatusCodeResult(HttpStatusCode.Conflict, $"Role to add to User {UserFromRoute.UserName} already belongs to that user.");
                 }
-                if (RMD.Role.Text == null)
-                {
-                    RMD.Role.Text = Idb.Roles.Find(RMD.Role.Value).Name;
-                }
-                AppIdManager.AddToRole(RMD.UserId, RMD.Role.Text);
+                AppIdManager.AddToRole(RMD.UserId, Request.Form["RoleToCreate"]);
                 return RedirectToAction("Edit", new { User = RMD.UserName });
 
             }
@@ -243,9 +247,10 @@ namespace Lucasweb.Areas.Manage.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(RoleModData RMD)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid&&ManualValidateModel(RMD))
             {
                 IdentityRole toCreate = new IdentityRole(RMD.RoleToCreate);
+
                 if (Idb.Roles.Where(role => role.Name == toCreate.Name).ToList().Count > 0)
                 {
                     ModelState.AddModelError("", "The Supplied Role Name Already Exists.");
@@ -255,10 +260,35 @@ namespace Lucasweb.Areas.Manage.Controllers
                 {
                     Idb.Roles.Add(toCreate);
                     Idb.SaveChanges();
+                    Idb.Database.SqlQuery(typeof(UserRole), $"Update [dbo].[AspNetRoles] Set [isManageable] = @isManageable, [HomeUrl] = @URL Where [Name] = @Name", new SqlParameter("@isManageable", System.Convert.ToInt32(RMD.isManageable)), new SqlParameter("@URL", RMD.URL), new SqlParameter("@Name", RMD.RoleToCreate));
                     return Redirect(TempData["returnUrl"].ToString() ?? Url.Action("Index"));
                 }
             }
             return View(RMD);
+        }
+
+        private bool ManualValidateModel(RoleModData rMD)
+        {
+            bool noError = true;
+            if (rMD.RoleToCreate == null)
+            {
+                Error("RoleToCreate","Role must not be empty",out noError);
+            }
+            if(rMD.URL == null)
+            {
+                Error("URL", "URL must not be not empty", out noError);
+            }
+            if (Uri.IsWellFormedUriString(rMD.URL, UriKind.RelativeOrAbsolute))
+            {
+                Error("URL", "Not a Properly formed URL", out noError);
+            }
+            return noError;
+        }
+
+        private void Error(string place, string Message, out bool noError)
+        {
+            ModelState.AddModelError(place, Message);
+            noError = false;
         }
 
         public ActionResult Remove(string User, string Role)

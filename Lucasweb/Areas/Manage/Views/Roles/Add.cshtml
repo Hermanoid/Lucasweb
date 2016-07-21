@@ -7,17 +7,18 @@
 </h3>
 <br/>
 <hr/>
-@using (Html.BeginForm())
+@using (Html.BeginForm("Add","Roles",FormMethod.Post))
 {
     @Html.AntiForgeryToken()
-
+    @Html.HiddenFor(model => model.UserName)
+    @Html.HiddenFor(model => model.RoleOptions)
     <div class="form-horizontal">
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Role, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.RoleToCreate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownListFor(model => model.Role.Value, Model.RoleOptions)
-                @Html.ValidationMessageFor(model => model.Role, "", new { @class = "text-danger" }, "RoleToCreate")
+                @Html.DropDownListFor(model => model.RoleToCreate,Model.RoleOptions2,"Select Role")
+                @Html.ValidationMessageFor(model => model.RoleToCreate, "", new { @class = "text-danger" }, "RoleToCreate")
             </div>
         </div>
 

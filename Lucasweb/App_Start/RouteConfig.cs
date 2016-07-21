@@ -13,21 +13,19 @@ namespace Lucasweb
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            //routes.MapRoute(
-            //    name: "CodeCraft",
-            //    url: "CodeCraft/{action}/{WeekId}/{htmlFile}",
-            //    defaults: new { controller = "Codecraft", action = "Index" }
-            //    );
+
             routes.MapRoute(
-                name: "Manage",
-                url: "Manage/{action}/{table}/{id}",
-                defaults: new { controller = "Manage", action = "Index", table = UrlParameter.Optional, id = UrlParameter.Optional }
-                );
+                name: "UserName",
+                url: "{controller}/{action}/{UserName}",
+                defaults: new { controller = "Home", action = "Index", UserName = UrlParameter.Optional },
+                namespaces: new string[] { "Lucasweb.Controllers" }
+            );
 
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+                namespaces:new string[] { "Lucasweb.Controllers" }
             );
 
 

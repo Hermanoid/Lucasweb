@@ -1,3 +1,5 @@
 ﻿@model object
 
-<h2>@Model.ToString()</h2>
+<h2 
+    @if (ViewData.ModelMetadata.Description != null) { @Html.Raw("title = "+ViewData.ModelMetadata.Description)}
+    >@Model.ToString()</h2>

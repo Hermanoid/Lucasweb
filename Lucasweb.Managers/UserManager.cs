@@ -34,5 +34,10 @@ namespace Lucasweb.Managers
         {
             return ClassFactory.CreateClass<IUserAccessor>().GetUsersBetween(f_index, l_index);
         }
+
+        public int TotalUsers()
+        {
+            return ClassFactory.CreateClass<IUserAccessor>().GetTotalUsers();
+        }
     }
 }

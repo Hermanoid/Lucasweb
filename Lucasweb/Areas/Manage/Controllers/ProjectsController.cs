@@ -10,6 +10,7 @@ using Lucasweb.DatabaseAccessors.EntityFramework;
 
 namespace Lucasweb.Areas.Manage.Controllers
 {
+    [Authorize(Roles = "Admin, ProjectAccessor")]
     public class ProjectsController : Controller
     {
         private DatabaseContext db = new DatabaseContext();

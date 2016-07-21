@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Lucasweb.DataContracts.User>
+﻿@model Lucasweb.Areas.Manage.Models.UsersModel
 
 @{
     ViewBag.Title = "index";
@@ -9,21 +9,20 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Email)
+            @Html.DisplayNameFor(model => model.Users.FirstOrDefault().Email)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.FirstName)
+            @Html.DisplayNameFor(model => model.Users.FirstOrDefault().FirstName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.LastName)
+            @Html.DisplayNameFor(model => model.Users.FirstOrDefault().LastName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.UserName)
+            @Html.DisplayNameFor(model => model.Users.FirstOrDefault().UserName)
         </th>
-        <th></th>
     </tr>
 
-@foreach (var item in Model) {
+@foreach (var item in Model.Users) {
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.Email)
@@ -37,12 +36,8 @@
         <td>
             @Html.DisplayFor(modelItem => item.UserName)
         </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.UserId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.UserId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.UserId })
-        </td>
     </tr>
 }
-
+    @Html.ActionLink("< Last","Index",new { F_index = Model.Last.F_index, L_index = Model.Last.L_index}) |
+    @Html.ActionLink("Next >","Index",new { F_index = Model.Next.F_index, L_index = Model.Next.L_index})
 </table>

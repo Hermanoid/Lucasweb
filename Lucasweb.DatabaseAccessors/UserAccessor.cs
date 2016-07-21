@@ -23,6 +23,14 @@ namespace Lucasweb.DatabaseAccessors
             }
         }
 
+        public int GetTotalUsers()
+        {
+            using (var db = new DatabaseContext())
+            {
+                return db.Users.ToList().Count;
+            }
+        }
+
         public DataContracts.User GetUserById(int userId)
         {
             using (var db = new DatabaseContext())

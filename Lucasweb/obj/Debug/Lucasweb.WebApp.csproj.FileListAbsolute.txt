@@ -133,3 +133,5 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb\bin\Lucasweb.DatabaseAccessors
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb\bin\Lucasweb.DatabaseAccessors.pdb
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb\bin\Lucasweb.Shared.Resources.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb\bin\Lucasweb.Shared.Resources.pdb
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb\obj\Debug\Lucasweb.Migrations.Sound.resources
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb\obj\Debug\Lucasweb.WebApp.csproj.GenerateResource.Cache
