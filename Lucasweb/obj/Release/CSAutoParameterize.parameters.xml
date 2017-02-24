@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="LucaswebContext-Web.config Connection String" description="LucaswebContext Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:lucasweb-database.database.windows.net,1433;Initial Catalog=lucasweb-SQLDatabase;Persist Security Info=False;User ID=Hermanoid;Password=19994Cord19!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\lucas\\Documents\\GitHub\\Lucasweb\\Lucasweb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='LucaswebContext']/@connectionString" />
-  </parameter>
-  <parameter name="Lucasweb.Models.IdentityContext-Web.config Connection String" description="Lucasweb.Models.IdentityContext Connection String used in web.config by the application to access the database." defaultValue="Lucasweb.Models.IdentityContext_ConnectionString" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\lucas\\Documents\\GitHub\\Lucasweb\\Lucasweb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Lucasweb.Models.IdentityContext']/@connectionString" />
-  </parameter>
-</parameters>
