@@ -1,0 +1,73 @@
+﻿@model Lucasweb.DatabaseAccessors.EntityFramework.Project
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Project</h4>
+    <hr />
+    @if (Model.isGlyph)
+    {
+        <span class="glyphicon @Model.glyphClass Font40px"></span>
+    }else
+    {
+        <img src="@Model.imgSrc" />
+    }
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.isGlyph)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isGlyph)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.glyphClass)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.glyphClass)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.imgSrc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.imgSrc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.URL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.URL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DisplayName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DisplayName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isHome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isHome)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProjectId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -10,6 +10,7 @@ namespace Lucasweb.DatabaseAccessors.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            ContextKey = "Lucasweb.DatabaseAccessors.EntityFramework.DatabaseContext";
         }
 
         protected override void Seed(Lucasweb.DatabaseAccessors.EntityFramework.DatabaseContext context)

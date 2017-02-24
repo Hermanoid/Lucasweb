@@ -11,4 +11,3 @@ This is a project, and it's a personal project.  Therefore there will be minimal
 
 _Note:  This stuff is open for the public eye, and anyone willing to examine the horridness of my code can do so.  I release this stuff to be read pubically and hereby allow anyone to use it for their own purposes (unless otherwise stated).  However, if you want to make professonal, not crappy code, this probably wouldn't be a very good source.  And, the older the code, the younger and less professonal the kid making it._
 
-_Note again:  Yes, you did just read the end of that last note correctly.  At the time of writing this README, I am 13 years old.  So.  Crappy code._

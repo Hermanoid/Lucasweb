@@ -12,5 +12,7 @@ namespace Lucasweb.Contracts
 
         int CreateUser(User user);
         User GetUser(int userId);
+        List<User> GetUsers(int f_index, int l_index);
+        int TotalUsers();
     }
 }

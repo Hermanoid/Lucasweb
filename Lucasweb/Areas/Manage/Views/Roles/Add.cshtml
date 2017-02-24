@@ -1,0 +1,35 @@
+﻿@model Lucasweb.Areas.Manage.Models.RoleModData
+@{TempData["returnUrl"] = Url.Action("Add", new { User = Model.UserName });}
+
+<h2>@Model.UserName</h2>
+<h3>
+    Add a role to @Model.UserName's account
+</h3>
+<br/>
+<hr/>
+@using (Html.BeginForm("Add","Roles",FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.UserName)
+    @Html.HiddenFor(model => model.RoleOptions)
+    <div class="form-horizontal">
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.RoleToCreate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.RoleToCreate,Model.RoleOptions2,"Select Role")
+                @Html.ValidationMessageFor(model => model.RoleToCreate, "", new { @class = "text-danger" }, "RoleToCreate")
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Add" class="btn btn-default" />
+            </div>
+        </div>
+
+        @Html.ActionLink("Create New Role","Create") |
+        @Html.ActionLink("Back To "+Model.UserName,"Edit",new { User=Model.UserName})
+    </div>
+}
+

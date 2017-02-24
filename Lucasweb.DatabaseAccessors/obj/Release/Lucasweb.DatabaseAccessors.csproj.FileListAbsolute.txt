@@ -31,3 +31,15 @@ C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DatabaseAccessors\bin\Microsof
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DatabaseAccessors\obj\Release\Lucasweb.DatabaseAccessors.csprojResolveAssemblyReference.cache
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DatabaseAccessors\obj\Release\Lucasweb.DatabaseAccessors.dll
 C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DatabaseAccessors\obj\Release\Lucasweb.DatabaseAccessors.pdb
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DatabaseAccessors\bin\EntityFramework.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DatabaseAccessors\bin\EntityFramework.SqlServer.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DatabaseAccessors\bin\Lucasweb.Contracts.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DatabaseAccessors\bin\Lucasweb.DataContracts.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DatabaseAccessors\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DatabaseAccessors\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DatabaseAccessors\bin\Lucasweb.Contracts.pdb
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DatabaseAccessors\bin\Lucasweb.DataContracts.pdb
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DatabaseAccessors\bin\EntityFramework.xml
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DatabaseAccessors\bin\EntityFramework.SqlServer.xml
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DatabaseAccessors\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\lucas\Documents\GitHub\Lucasweb\Lucasweb.DatabaseAccessors\bin\Microsoft.AspNet.Identity.Core.xml
