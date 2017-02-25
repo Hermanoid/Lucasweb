@@ -1,0 +1,88 @@
+﻿@{
+    Layout = "~/Views/AncientWeb/_AncientLayout.cshtml";
+}
+
+
+<script src="masonry.pkgd.min.js"></script>
+<script type="text/javascript">
+    $(window).load(function () {
+        var $container = $('.container');
+        // initialize
+        $container.masonry({
+            columnWidth: 0,
+            itemSelector: '.item',
+            gutter: 5,
+            "isFitWidth": true
+        });
+    });
+</script>
+<script src="SoundGet.js"></script>
+<script src="soundweb.js"></script>
+
+
+
+<div id="soundwebMasonryWrapper">
+    <div class="container masonry-container masonry">
+        <div class="item"><p>Blah</p></div>
+        <div class="item center">
+            <p>Audio Name: SMASH</p><audio class="soundwebSounds" controls preload="none">
+                <source src="http://www.cambrinus.nl/bier/goodies/sounds/grolsch_plop.wav" type="audio/mp3">
+            </audio>
+        </div>
+        <div class="item"><p>food is good:</p><p>This cuisine is positively delectable to anthropological gustatory cells.</p></div>
+        <div class="item"><p>ANNA IS AWESOME</p></div>
+        <div class="item"><p>Anna is a cousin of Lucas</p></div>
+        <div class="item"><p>Lucas made this website</p></div>
+        <div class="item"><p>Lucas is super awesome</p></div>
+        <div class="item"><p>TRIVIA QUESTION:</p><p>A comment on this page is positively incorrect. can you find it?</p><p>*HINT* ANNA IS NOT EXACTLY AWESOME</p></div>
+        <div class="item"><p>1</p></div>
+        <div class="item"><p>2</p></div>
+        <div class="item"><p>3</p></div>
+        <div class="item"><p>4</p></div>
+        <div class="item"><p>5</p></div>
+        <div class="item"><p>6</p></div>
+        <div class="item"><p>7</p></div>
+        <div class="item"><p>8</p></div>
+        <div class="item"><p>9</p></div>
+        <div class="item"><p>10</p></div>
+        <div class="item"><p>11</p></div>
+        <div class="item"><p>12</p></div>
+        <div class="item"><p>13</p></div>
+        <div class="item"><p>14</p></div>
+        <div class="item"><p>15</p></div>
+        <div class="item"><p>16</p></div>
+        <div class="item"><p>17</p></div>
+        <div class="item"><p>18</p></div>
+        <div class="item"><p>19</p></div>
+        <div class="item"><p>20</p></div>
+
+    </div>
+</div>
+<div id="soundwebFooter">
+    <div class="center" id="soundwebGetSoundsDiv">
+        <h1>You may notice that their aren't many sounds here.</h1>
+        <p> That's because this website isn't hosted, and those links that people have uploaded can't automatically go to your computer.</p>
+        <p>To manually get links, you'll have to download the public register of links.</p>
+        <p id="soundwebGetSoundDirections"> You can do that by clicking below</p>
+        <div class="center">
+            <img onclick="getSounds();" class="soundwebImgResize" src="https://cdn3.iconfinder.com/data/icons/glypho-music-and-sound/64/music-note-sound-circle-512.png" id="soundwebGetSoundImg">
+            <a id="soundwebGetSoundA" href="https://docs.google.com/feeds/download/documents/export/Export?id=1ynhHZihlL241FNZEar6ibzEdhHcWJ1qXKaxMUKM-DpE&exportFormat=txt"></a>
+            </img>
+            <br />
+            <input id="soundwebGetSoundPathInput" type="file" />
+            <br />
+            <input id="soundwebGetSoundPathText" placeholder="Enter File Path Here" type="text" />
+        </div>
+    </div>
+    <div class="center" id="soundwebAddSoundDiv">
+        <h1>Want to upload your own sounds? Click Here!!</h1>
+        <a href="Upload.html">
+            <img class="soundwebImgResize" src="https://cdn1.iconfinder.com/data/icons/music-set/24/Volume-Up-512.png" id="soundwebAddSoundImg" />
+        </a>
+    </div>
+    <br />
+    <i>Yeah... None of the stuff above works.  If you manage to get past the bugs to a "loading" message, don't wait.  That's as far as I ever got on this older Soundweb.</i>
+    <br />
+    <br />
+    <p>Thanks to <a href="http://www.findsounds.com/">www.findsounds.com</a> for providing sounds (for now)</p>
+</div>

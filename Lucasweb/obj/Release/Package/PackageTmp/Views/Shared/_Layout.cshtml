@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/bootstrap-3.3.6-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="~/Content/Site.css"/>
+    <link rel="icon" href="~/Content/ProfileImage.ico"/>
+    <script src="~/scripts/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <div id="headbar" class="row Mstrip B-555">
+        <div class="Pstrip col-lg-1 col-xs-2">
+            <a href="~/" class="H0-75in">
+                <div class="row Mstrip">
+                    <img class="H0-75in" id="lucaslogo" src="~/Content/ProfileImage.png" />
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-2 col-xs-3 H0-75in B-555 HB-444">
+            <a  class ="BoringWhite" href="Soundweb">
+                <h3 class="BoringWhite text-center">
+                    Soundweb
+                </h3>
+            </a>
+        </div>
+        <div class="col-lg-2 col-xs-3 H0-75in B-555 HB-444">
+            <a class ="BoringWhite" href="Ancientweb">
+                <h3 class="BoringWhite text-center">
+                    Ancientweb
+                </h3>
+            </a>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <div class="B-555" id="footer">
+        <div id="footerText" class="text-center">
+            <p class="text-center" id="footerCopywrite">©2016 Lucasweb Productions, Herman, NE.  All rights reserved.  I think.</p>
+            <small class="text-center">The Lucasweb:  A combination of epic coding fails.</small>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+﻿.W100{
+    width:100%;
+}
+.H0-75in{
+    height:0.75in;
+}
+.Pstrip{
+    padding:0;
+}
+.PL10{
+    padding-left:10px;
+}
+.Ptop5px{
+    padding-top:5px;
+}
+.PB-5px{
+    padding-bottom:5px;
+}
+.Mstrip{
+    margin:0;
+}
+.Mtop10px{
+    margin-top:10px;
+}
+.B-333{
+    background-color:#333;
+}
+.B-555{
+    background-color:#555;
+}
+.B-DDD{
+    background-color:#DDD;
+}
+.B-EEE{
+    background-color:#EEE;
+}
+.HB-444:hover{
+    background-color:#444;
+}
+.HB-CCC:hover{
+    background-color:#CCC;
+}
+.Font24px{
+    font-size:24px;
+}
+.Font40px{
+    font-size:40px;
+}
+.C-337ab7{
+    color:#337ab7;
+}
+#lucaslogo{
+    margin-left:0;
+
+}
+.BoringWhite{
+    text-decoration:none;
+    color:white;
+}
+.BoringWhite:hover, .BoringWhite:visited, .BoringWhite:link{
+    text-decoration:none;
+}
+#footer{
+    height:0.75in;
+    vertical-align:middle;
+}
+#footerText{
+    vertical-align:middle;
+    color:#CCC;
+    font-size:0.15in;
+    padding-top:0.1125in;
+
+    margin:0;
+}
+#footerCopywrite{
+    margin:0;
+}
+.jumboformat{
+    padding:5px;
+    border-radius:15px;
+}
+.B-BBB{
+    background-color:#BBB;
+}
