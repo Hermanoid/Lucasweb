@@ -52,17 +52,5 @@ Temporary Items
 bin/
 obj/
 packages/
-.suo<<<<<<< HEAD
-
-*.dll
-*.pdb
-*.jfm
-bin/
-obj/
-packages/
-=======
-.dll
-.pdb
-
->>>>>>> origin/CreateEncrypterWeb
 .suo
+*.user
