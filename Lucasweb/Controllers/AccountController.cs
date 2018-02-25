@@ -183,33 +183,33 @@ namespace Lucasweb.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult Public(string UserName)
-        {
-            if(UserName == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            AppUserId AppUser;
-            try
-            {
-                AppUser = db.Users.First(appUser => appUser.UserName == UserName);
-            }
-            catch (InvalidOperationException)
-            {
-                return HttpNotFound();
-            }
-            User userData = UserDataManager.GetUser(AppUser.UserId);
-            if (AppUser == null || userData == null)
-            {
-                return HttpNotFound();
-            }
-            PublicUserData PUD = new PublicUserData()
-            {
-                UserName = AppUser.UserName,
-                FirstName = userData.FirstName,
-                LastName = userData.LastName
-            };
-            return View(PUD);
-        }
+        //public ActionResult Public(string UserName)
+        //{
+        //    if(UserName == null)
+        //    {
+        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+        //    }
+        //    AppUserId AppUser;
+        //    try
+        //    {
+        //        AppUser = db.Users.First(appUser => appUser.UserName == UserName);
+        //    }
+        //    catch (InvalidOperationException)
+        //    {
+        //        return HttpNotFound();
+        //    }
+        //    User userData = UserDataManager.GetUser(AppUser.UserId);
+        //    if (AppUser == null || userData == null)
+        //    {
+        //        return HttpNotFound();
+        //    }
+        //    PublicUserData PUD = new PublicUserData()
+        //    {
+        //        UserName = AppUser.UserName,
+        //        FirstName = userData.FirstName,
+        //        LastName = userData.LastName
+        //    };
+        //    return View(PUD);
+        //}
     }
 }

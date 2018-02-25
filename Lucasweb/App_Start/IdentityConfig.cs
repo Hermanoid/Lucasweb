@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 
 namespace Lucasweb.App_Start
 {
+    
     public class IdentityConfig
     {
         public void Configuration(IAppBuilder app)

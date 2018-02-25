@@ -25,6 +25,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <ApplicationInsightsResourceId />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -325,12 +326,10 @@
     <Compile Include="Areas\Manage\Controllers\RolesController.cs" />
     <Compile Include="Areas\Manage\Controllers\UsersController.cs" />
     <Compile Include="Areas\Manage\ManageAreaRegistration.cs" />
-    <Compile Include="Areas\Manage\Models\ManageHomeItem.cs" />
     <Compile Include="Areas\Manage\Models\RoleModData.cs" />
     <Compile Include="Areas\Manage\Models\SearchType.cs" />
     <Compile Include="Areas\Manage\Models\UserRoleData.cs" />
     <Compile Include="Areas\Manage\Models\UserSearchRequest.cs" />
-    <Compile Include="Areas\Manage\Models\UsersModel.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AncientWebController.cs" />
     <Compile Include="Controllers\EncrypterController.cs" />
@@ -341,17 +340,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201607211559557_Sound.cs" />
-    <Compile Include="Migrations\201607211559557_Sound.Designer.cs">
-      <DependentUpon>201607211559557_Sound.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityContext.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\LucaswebContext.cs" />
     <Compile Include="Models\Password.cs" />
     <Compile Include="Models\Pin.cs" />
-    <Compile Include="Models\PublicUserData.cs" />
     <Compile Include="Models\RegisterModel.cs" />
     <Compile Include="Models\SimpleStringModel.cs" />
     <Compile Include="Models\Sound.cs" />
@@ -459,11 +452,6 @@
       <Project>{f7c0b0b7-753e-45c4-b356-ece41f1e035e}</Project>
       <Name>Lucasweb.Utilities</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201607211559557_Sound.resx">
-      <DependentUpon>201607211559557_Sound.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
